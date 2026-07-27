@@ -84,3 +84,7 @@
 - Logistic Regression
 - Trees, Random Forest & Gradient Boosting
 - Encoding, Scaling & Pipelines
+- valuation Metrics
+- Threshold Tuning
+- Overfitting & Underfitting
+- Feature Importance
