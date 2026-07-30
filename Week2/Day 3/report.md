@@ -2,19 +2,19 @@
 
 ## 1. Problem Statement
 
-[Write the problem statement here]
+
 
 ---
 
 ## 2. Project Goal
 
-[Explain the main objective of the project and what the model aims to predict]
+
 
 ---
 
 ## 3. Dataset Overview
 
-[Describe the dataset:
+
 - Dataset source
 - Number of rows and columns
 - Type of data
@@ -24,15 +24,13 @@
 
 ## 4. Why This Dataset Was Chosen
 
-[Explain the reason for selecting this dataset and its relevance to the problem]
+
 
 ---
 
 ## 5. Features Used
 
-[List and explain all input features used for prediction]
 
-Example:
 - Feature 1: Description
 - Feature 2: Description
 
@@ -40,9 +38,7 @@ Example:
 
 ## 6. Target Variable
 
-[Explain the target variable and what the model predicts]
 
-Example:
 - Target: Tomorrow's Closing Stock Price
 
 ---
@@ -51,7 +47,6 @@ Example:
 
 ## Initial Dataset Checking
 
-[Describe:
 - Shape of dataset
 - Data types
 - Missing values
