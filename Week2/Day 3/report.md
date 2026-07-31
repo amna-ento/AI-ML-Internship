@@ -833,8 +833,7 @@ Several visualizations were created to better understand the dataset and evaluat
 ## Visualization 1: Model Performance Comparison
 
 
-
-![Stock Price Plot](h.png)
+<img src="./h.png" width="500">
 
 This scatter plot compares the actual stock prices with the predicted prices from all models. Most points lie close to the diagonal line, showing that the predictions are very similar to the real values.
 
