@@ -858,7 +858,7 @@ Several visualizations were created to better understand the dataset and evaluat
 ## Visualization 1: Model Performance Comparison
 
 
-![Image Description](h.png)
+<img src="./h.png" width="350">
 
 This scatter plot compares the actual stock prices with the predicted prices from all models. Most points lie close to the diagonal line, showing that the predictions are very similar to the real values.
 
@@ -875,7 +875,7 @@ This graph shows the prediction errors made by each model. Most points are close
 
 ## Visualization 3: Prediction Error Distribution
 
-![Image Description](i.png)
+![Stock Price Plot](i.png)
 
 This graph shows how prediction errors are distributed for each model. Since most errors are centered around zero, it indicates that the models generally made small prediction mistakes and performed well.
 
