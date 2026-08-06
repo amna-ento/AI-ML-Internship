@@ -2,11 +2,7 @@
 
 # 1. Problem Statement
 
-<<<<<<< HEAD
 The stock market is dynamic, making future stock price prediction a challenging regression problem. In this project, historical **New York Stock Exchange (NYSE)** data was used to predict the **next day's closing stock price**. Multiple regression models were compared to identify the most accurate one.
-=======
-
->>>>>>> dfbcfc3bb7c9a7a4747362e2d1b5dfe74f9e24ae
 
 ---
 
@@ -20,16 +16,11 @@ The main objective of this project was to develop a machine learning regression 
 - Compare multiple regression algorithms.
 - Identify the best-performing model based on prediction accuracy.
 
-<<<<<<< HEAD
-=======
-
->>>>>>> dfbcfc3bb7c9a7a4747362e2d1b5dfe74f9e24ae
-
 ---
 
 # 3. Dataset Overview
 
-<<<<<<< HEAD
+
 ## Dataset Source
 
 The dataset was obtained from the **New York Stock Exchange (NYSE) historical stock market dataset**.
@@ -62,13 +53,12 @@ For this project, only the historical records of **Apple Inc. (AAPL)** were sele
 - Time-series dataset
 - Numerical and date features
 - Suitable for regression-based forecasting
-=======
 
 - Dataset source
 - Number of rows and columns
 - Type of data
 - Important characteristics]
->>>>>>> dfbcfc3bb7c9a7a4747362e2d1b5dfe74f9e24ae
+
 
 ---
 
@@ -82,16 +72,11 @@ This dataset was selected because it provides real-world historical stock market
 - Represents a real financial forecasting problem.
 - Provides continuous numerical values required for regression.
 
-<<<<<<< HEAD
-=======
-
->>>>>>> dfbcfc3bb7c9a7a4747362e2d1b5dfe74f9e24ae
-
 ---
 
 # 5. Features Used
 
-<<<<<<< HEAD
+
 The following input features were used to predict the next day's closing stock price.
 
 | Feature | Description |
@@ -110,18 +95,11 @@ The following input features were used to predict the next day's closing stock p
 - **Close Price:** Usually contains the strongest information about market movement.
 - **Volume:** Reflects investor activity and market interest.
 
-These features collectively provide sufficient information to estimate the stock price movement for the following trading day.
-=======
-
-- Feature 1: Description
-- Feature 2: Description
->>>>>>> dfbcfc3bb7c9a7a4747362e2d1b5dfe74f9e24ae
 
 ---
 
 # 6. Target Variable
 
-<<<<<<< HEAD
 The target variable for this project was:
 
 **Tomorrow_Close**
@@ -147,17 +125,14 @@ df["Tomorrow_Close"] = df["close"].shift(-1)
 ```
 
 After shifting, the last row contained no target value because there is no next trading day available. Therefore, the last row was removed from the dataset before training the models.
-=======
+
 
 - Target: Tomorrow's Closing Stock Price
->>>>>>> dfbcfc3bb7c9a7a4747362e2d1b5dfe74f9e24ae
-
 
 # 7. Data Inspection
 
 Before training the machine learning models, the dataset was carefully inspected to understand its structure, quality, and overall condition. This process helps identify issues such as missing values, duplicate records, incorrect data types, and data inconsistencies that could affect model performance.
 
-<<<<<<< HEAD
 
 ## Dataset Shape
 
@@ -207,13 +182,12 @@ The **Date** column was converted into a proper datetime format to support chron
 | Max | 1584.44 | 1578.13 | 1549.94 | 1600.93 | 859.64M |
 
 These statistics helped understand the distribution and range of stock prices before model training.
-=======
+
 - Shape of dataset
 - Data types
 - Missing values
 - Duplicate values
-- Statistical summary]
->>>>>>> dfbcfc3bb7c9a7a4747362e2d1b5dfe74f9e24ae
+- Statistical summary
 
 ---
 
@@ -532,7 +506,8 @@ Linear Regression achieved the **highest R² Score** and the **lowest prediction
 
 
 ![Image Description](a.png)
-*description*
+
+This graph compares the real stock prices with the prices predicted by the Linear Regression model. Since both lines almost overlap, the model was able to predict the stock prices very accurately.
 
 ---
 
@@ -858,7 +833,7 @@ Several visualizations were created to better understand the dataset and evaluat
 ## Visualization 1: Model Performance Comparison
 
 
-<img src="./h.png" width="350">
+![Image Description](h.png)
 
 This scatter plot compares the actual stock prices with the predicted prices from all models. Most points lie close to the diagonal line, showing that the predictions are very similar to the real values.
 
@@ -866,7 +841,7 @@ This scatter plot compares the actual stock prices with the predicted prices fro
 
 ## Visualization 2: Residual Plot
 
-![Image Description](g.png)
+![Stock Price Plot](g.png)
 
 
 This graph shows the prediction errors made by each model. Most points are close to the zero line, meaning the models usually predicted values very close to the actual stock prices.
