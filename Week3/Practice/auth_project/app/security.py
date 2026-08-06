@@ -12,7 +12,7 @@ oauth2_scheme = OAuth2PasswordBearer(
 )
 
 
-SECRET_KEY = "m4j54jk2n45em98dkoo9f99$nmio543w"
+SECRET_KEY = "..."
 
 ALGORITHM = "HS256"
 
