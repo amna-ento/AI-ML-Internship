@@ -19,7 +19,6 @@ The machine learning model predicts whether a customer is likely to churn based 
 - Single Customer Prediction
 - Batch Prediction
 - Health Check Endpoint
-- Request Logging
 - Pydantic Data Validation
 - SQLAlchemy Database Integration
 
