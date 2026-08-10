@@ -15,3 +15,6 @@ if __name__ == "__main__":
     model = load_model()
     print("Model loaded successfully")
     print(model)
+    
+    
+    

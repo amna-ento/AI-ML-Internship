@@ -41,11 +41,9 @@ def predict(house: HousePredictionRequest):
         )
 
     try:
-        prediction = predict_price(model, house)
+        result = predict_price(model, house)
 
-        return {
-            "predicted_price": prediction
-        }
+        return result
 
     except ValueError as e:
         raise HTTPException(

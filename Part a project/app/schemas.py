@@ -1,13 +1,15 @@
-from pydantic import BaseModel, Field
+from pydantic import BaseModel
 
 
 class HousePredictionRequest(BaseModel):
-    area: float = Field(gt=0)
-    bedrooms: int = Field(gt=0)
-    bathrooms: int = Field(gt=0)
-    age: int = Field(ge=0)
-    location: str = Field(min_length=1)
+    area: float
+    bedrooms: int
+    bathrooms: int
+    age: int
+    location: str
 
 
 class HousePredictionResponse(BaseModel):
     predicted_price: float
+    mae: float
+    r2_score: float | None

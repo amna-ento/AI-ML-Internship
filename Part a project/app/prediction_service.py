@@ -8,6 +8,9 @@ VALID_LOCATIONS = {
     "islamabad": "Islamabad"
 }
 
+MODEL_MAE = 446818.2
+MODEL_R2 = None
+
 
 def predict_price(model, house: HousePredictionRequest):
 
@@ -34,4 +37,8 @@ def predict_price(model, house: HousePredictionRequest):
             "Please provide realistic house details."
         )
 
-    return prediction
+    return {
+        "predicted_price": prediction,
+        "mae": MODEL_MAE,
+        "r2_score": MODEL_R2
+    }
