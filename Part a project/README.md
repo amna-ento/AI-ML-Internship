@@ -96,23 +96,6 @@ The numerical features are kept as numerical values.
 
 The `location` column is categorical, so One-Hot Encoding is used.
 
-The preprocessing and model are combined into a single Scikit-learn Pipeline:
-
-```text
-Numerical Features
-        ↓
-    Passthrough
-
-Location
-        ↓
-One-Hot Encoding
-
-        ↓
-
-Linear Regression
-```
-
-The complete pipeline is saved using Joblib.
 
 ---
 
