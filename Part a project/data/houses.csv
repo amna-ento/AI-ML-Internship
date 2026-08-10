@@ -1,6 +1,61 @@
-area,bedrooms,bathrooms,age,location,price
-1200,2,1,10,Lahore,8500000
-1800,3,2,5,Lahore,12500000
-2500,4,3,2,Lahore,19000000
-900,2,1,15,Islamabad,7200000
-2000,3,2,7,Islamabad,14500000
+id,area_sqft,bedrooms,bathrooms,age_years,city,location,price
+1,3153,2,2,8,Lahore,Bahria Town,45358000
+2,4356,2,2,2,Lahore,DHA,58649000
+3,2528,3,2,23,Lahore,Wapda Town,40779000
+4,4579,5,5,19,Lahore,Johar Town,60391000
+5,3687,3,4,9,Lahore,Bahria Town,54656000
+6,1659,4,3,13,Lahore,DHA,36837000
+7,1255,4,4,24,Lahore,Gulberg,32520000
+8,3301,5,4,21,Lahore,Model Town,56079000
+9,1275,3,2,22,Lahore,Bahria Town,24831000
+10,4013,3,2,9,Lahore,Gulberg,67699000
+11,3932,4,4,12,Lahore,Bahria Town,64447000
+12,2905,2,2,6,Lahore,Gulberg,49098000
+13,3556,6,6,25,Lahore,DHA,58641000
+14,4186,2,2,9,Lahore,DHA,58453000
+15,4989,4,4,13,Lahore,Wapda Town,70129000
+16,2920,4,4,24,Lahore,Model Town,51315000
+17,4171,6,7,12,Lahore,Bahria Town,63894000
+18,1285,5,4,4,Lahore,Bahria Town,34525000
+19,4052,5,4,13,Lahore,Model Town,67431000
+20,1838,4,3,22,Lahore,Model Town,37320000
+21,3304,4,3,14,Lahore,Bahria Town,52214000
+22,1771,4,4,21,Lahore,Johar Town,35144000
+23,2152,6,6,12,Lahore,Bahria Town,46971000
+24,3555,6,5,16,Lahore,DHA,56882000
+25,1374,4,4,8,Lahore,Model Town,33135000
+26,1930,5,4,5,Lahore,Wapda Town,39244000
+27,4366,3,3,7,Lahore,Model Town,73414000
+28,4168,3,3,22,Lahore,Wapda Town,56128000
+29,1891,6,7,8,Lahore,Bahria Town,40729000
+30,2704,2,2,1,Lahore,DHA,50170000
+31,1452,2,2,2,Lahore,Johar Town,26933000
+32,4876,3,3,7,Lahore,Model Town,67917000
+33,2890,6,7,16,Lahore,Gulberg,54024000
+34,3802,2,3,14,Lahore,Gulberg,60597000
+35,1396,2,2,13,Lahore,Wapda Town,25540000
+36,2469,2,2,7,Lahore,Model Town,43525000
+37,3181,5,5,15,Lahore,Bahria Town,49529000
+38,1314,6,5,21,Lahore,Model Town,33577000
+39,4229,3,3,16,Lahore,Gulberg,61537000
+40,4004,2,2,1,Lahore,Gulberg,61351000
+41,4365,5,5,23,Lahore,Wapda Town,66250000
+42,2455,5,5,10,Lahore,Bahria Town,43424000
+43,3469,6,5,2,Lahore,DHA,65493000
+44,1365,6,6,17,Lahore,DHA,35390000
+45,2826,6,5,13,Lahore,DHA,55216000
+46,1571,6,5,14,Lahore,Wapda Town,36445000
+47,3036,6,6,7,Lahore,Wapda Town,56945000
+48,4142,3,3,5,Lahore,Wapda Town,63225000
+49,1494,5,5,1,Lahore,Gulberg,43094000
+50,2646,2,2,17,Lahore,Johar Town,36243000
+51,3927,2,2,10,Lahore,Bahria Town,57800000
+52,964,6,6,22,Lahore,Model Town,33071000
+53,3066,2,2,4,Lahore,DHA,51181000
+54,2625,4,4,23,Lahore,Johar Town,40826000
+55,2957,4,5,2,Lahore,DHA,56902000
+56,929,4,3,11,Lahore,Bahria Town,27019000
+57,4403,3,4,18,Lahore,DHA,59163000
+58,3924,3,2,19,Lahore,Model Town,55137000
+59,3425,3,2,12,Lahore,DHA,52836000
+60,3797,3,2,25,Lahore,Model Town,57191000

@@ -1,23 +1,34 @@
 
 # House Price Prediction API
 
+A simple Machine Learning and FastAPI project that predicts house prices based on house characteristics.
+
+The project uses model trained on a house price dataset containing information about house area, bedrooms, bathrooms, age, city, and location.
+
+The trained Machine Learning pipeline is saved using Joblib and loaded by the FastAPI application.
+
+---
+
 ## Project Overview
 
-This project uses a Machine Learning regression model to predict house prices from:
+The project has two main parts:
 
-- Area
-- Bedrooms
-- Bathrooms
-- Age
-- Location
+1. **Machine Learning**
+   - Load and prepare the dataset
+   - Check and clean the data
+   - Select features and target
+   - Encode categorical features
+   - Split the dataset into training and testing data
+   - Train and evaluate regression models
+   - Save the trained model
 
-The trained Machine Learning pipeline is saved using Joblib and loaded by a FastAPI application.
-
-The API provides endpoints for:
-
-- Checking whether the API is running
-- Checking application health
-- Predicting a house price
+2. **FastAPI**
+   - Load the saved Machine Learning model
+   - Validate user input
+   - Accept house information
+   - Predict the house price
+   - Return the prediction and model evaluation metrics
+   - Handle errors appropriately
 
 ---
 
@@ -26,7 +37,7 @@ The API provides endpoints for:
 - Python
 - Pandas
 - NumPy
-- Sklearn
+- Scikit-learn
 - Joblib
 - FastAPI
 - Uvicorn
@@ -46,7 +57,7 @@ house-price-api/
 │   └── schemas.py
 │
 ├── data/
-│   └── houses.csv
+│   └── house_data.csv
 │
 ├── models/
 │   └── house_price_model.pkl
@@ -61,26 +72,84 @@ house-price-api/
 
 ## Dataset
 
-The provided dataset contains the following columns:
+The new dataset contains **60 rows and 8 columns**.
+
+The columns are:
 
 ```text
-area
+id
+area_sqft
 bedrooms
 bathrooms
-age
+age_years
+city
 location
 price
 ```
 
+Example:
+
+| id | area_sqft | bedrooms | bathrooms | age_years | city   | location    | price    |
+|---:|----------:|---------:|----------:|----------:|--------|-------------|---------:|
+| 1  | 3153      | 2        | 2         | 8         | Lahore | Bahria Town | 45358000 |
+| 2  | 4356      | 2        | 2         | 2         | Lahore | DHA         | 58649000 |
+| 3  | 2528      | 3        | 2         | 23        | Lahore | Wapda Town  | 40779000 |
+| 4  | 4579      | 5        | 5         | 19        | Lahore | Johar Town  | 60391000 |
+| 5  | 3687      | 3        | 4         | 9         | Lahore | Bahria Town | 54656000 |
+```
+
+---
+
+## Loading the Dataset
+
+The dataset is loaded using Pandas:
+
+```python
+import pandas as pd
+
+df = pd.read_csv("house_data.csv")
+```
+
+---
+
+## Data Checking and Cleaning
+
+The dataset was checked for:
+
+* Missing values
+* Invalid values
+* Duplicate rows
+* Incorrect data types
+* Invalid numerical values
+
+The `id` column is used only as an identifier and is not used as a Machine Learning feature.
+
+Therefore, it is removed before training:
+
+```python
+df = df.drop(columns=["id"])
+```
+
+---
+
+## Features
+
 The features used by the model are:
 
 ```text
-area
+area_sqft
 bedrooms
 bathrooms
-age
+age_years
+city
 location
 ```
+
+These columns describe the characteristics of a house and can be used to predict its price.
+
+---
+
+## Target
 
 The target variable is:
 
@@ -88,51 +157,104 @@ The target variable is:
 price
 ```
 
----
-
-## Data Preprocessing
-
-The numerical features are kept as numerical values.
-
-The `location` column is categorical, so One-Hot Encoding is used.
-
+The model learns the relationship between the house characteristics and its price.
 
 ---
 
-## Train/Test Split
+# Data Preprocessing
 
-The dataset is split into:
+There are two types of features in the dataset.
+
+## Numerical Features
+
+The following columns are numerical:
+
+```text
+area_sqft
+bedrooms
+bathrooms
+age_years
+```
+
+These values are kept as numerical values.
+
+## Categorical Features
+
+The following columns contain categorical values:
+
+```text
+city
+location
+```
+
+These columns are converted into numerical values using **One-Hot Encoding**.
+
+The project uses a `ColumnTransformer` to apply the appropriate preprocessing to each type of feature.
+
+The preprocessing and model are combined into a single Scikit-learn Pipeline:
+
+```text
+Numerical Features
+        ↓
+   Passthrough
+
+City + Location
+        ↓
+One-Hot Encoding
+
+        ↓
+
+Linear Regression
+```
+
+This complete pipeline is saved as a single `.pkl` file.
+
+---
+
+# Train/Test Split
+
+The dataset contains:
+
+```text
+60 rows
+```
+
+The data is divided into:
 
 ```text
 80% Training
 20% Testing
 ```
 
-The training data is used to train the model, while the testing data is used to evaluate its performance on unseen data.
+Therefore:
+
+```text
+Training samples = 48
+Testing samples  = 12
+```
+
+The training data is used to train the model.
+
+The testing data is kept separate and is used to evaluate how well the trained model performs on unseen data.
 
 ---
 
-## Model Comparison
+# Model Training
 
-Three regression models were compared:
+Three regression models were considered:
 
 1. Linear Regression
 2. Random Forest Regressor
 3. Gradient Boosting Regressor
 
-| Model             |       MAE | R² Score |
-| ----------------- | --------: | -------: |
-| Linear Regression | 446,818.2 |      NaN |
-| Random Forest     | 1,524,000 |      NaN |
-| Gradient Boosting | 3,752,957 |      NaN |
+The models were compared using:
 
----
+* MAE
+* R² Score
 
-## Model Selection
+Linear Regression was selected as the final model for this project.
 
-Linear Regression was selected because it achieved the lowest MAE among the tested models.
-
-The final saved pipeline contains:
+The final pipeline contains:
 
 ```text
 ColumnTransformer
@@ -144,20 +266,54 @@ LinearRegression
 
 ---
 
-## Note About R²
+# Model Evaluation
 
-The provided dataset contains only 5 observations.
+The final Linear Regression model was evaluated on the test dataset.
 
-With an 80/20 split:
+
+## MAE
+
+**Mean Absolute Error (MAE)** measures the average difference between the actual house prices and the prices predicted by the model.
+
+Our result:
 
 ```text
-Training samples = 4
-Testing samples = 1
+MAE = 2,480,529.53
 ```
 
-R² cannot be meaningfully calculated with only one test observation, so the R² value is `NaN`.
+This means that, on average, the model's predictions are approximately **2.48 million** away from the actual house prices in the test dataset.
 
-The project does not replace or fabricate an R² value.
+## R² Score
+
+**R² Score** measures how well the model explains the variation in house prices.
+
+Our result:
+
+```text
+R² Score = 0.8849
+```
+
+This means that the model explains approximately **88.49%** of the variation in the test-set house prices.
+
+---
+
+# Model Persistence
+
+After training and evaluation, the complete Machine Learning pipeline is saved using Joblib:
+
+```text
+models/house_price_model.pkl
+```
+
+The saved file contains:
+
+```text
+Preprocessing
+     +
+Linear Regression Model
+```
+
+The model does not need to be trained again when the FastAPI application starts.
 
 ---
 
@@ -165,11 +321,21 @@ The project does not replace or fabricate an R² value.
 
 ## API Endpoints
 
-### `GET /`
+The application provides three main endpoints:
 
-Returns a basic API message.
+```text
+GET  /
+GET  /health
+POST /predict
+```
 
-#### Response
+---
+
+## `GET /`
+
+Returns a basic message confirming that the API is running.
+
+### Response
 
 ```json
 {
@@ -179,11 +345,11 @@ Returns a basic API message.
 
 ---
 
-### `GET /health`
+## `GET /health`
 
-Checks whether the trained model is available.
+Checks whether the trained Machine Learning model is available.
 
-#### Response
+### Response
 
 ```json
 {
@@ -191,35 +357,57 @@ Checks whether the trained model is available.
 }
 ```
 
-If the model file is missing, the API returns HTTP `503`.
+If the model file is not available, the application reports an unhealthy status.
 
 ---
 
-### `POST /predict`
+## `POST /predict`
 
-Predicts the price of a house.
+Predicts the price of a house using the trained Machine Learning model.
 
-#### Request
+## Request
+
+The new API accepts:
 
 ```json
 {
-  "area": 1800,
-  "bedrooms": 3,
+  "area_sqft": 3153,
+  "bedrooms": 2,
   "bathrooms": 2,
-  "age": 5,
-  "location": "Lahore"
+  "age_years": 8,
+  "city": "Lahore",
+  "location": "Bahria Town"
 }
 ```
 
-#### Response
+The API sends these values to the saved Machine Learning pipeline.
 
-```json
-{
-  "predicted_price": 12450000.0
-}
+---
+The exact predicted price changes depending on the house information provided by the user.
+
+The MAE and R² values represent the overall performance of the trained model on the test dataset.
+
+Therefore, they remain the same for different prediction requests using the same trained model.
+
+---
+
+### Readable Price Format
+
+The predicted price is formatted into a human-readable format.
+
+For example:
+
+```text
+24540000
 ```
 
-The exact prediction depends on the trained model.
+is returned as:
+
+```text
+24.54 million
+```
+
+This makes large house prices easier to understand.
 
 ---
 
@@ -229,68 +417,128 @@ The API validates incoming requests using Pydantic.
 
 | Field       | Validation             |
 | ----------- | ---------------------- |
-| `area`      | Must be greater than 0 |
+| `area_sqft` | Must be greater than 0 |
 | `bedrooms`  | Must be greater than 0 |
 | `bathrooms` | Must be greater than 0 |
-| `age`       | Must be 0 or greater   |
+| `age_years` | Must be 0 or greater   |
+| `city`      | Must not be empty      |
 | `location`  | Must not be empty      |
 
-Invalid input results in HTTP `422`.
+For example:
+
+```json
+{
+  "area_sqft": -100,
+  "bedrooms": 0,
+  "bathrooms": -1,
+  "age_years": -5,
+  "city": "",
+  "location": ""
+}
+```
+
+is rejected by Pydantic validation.
+
+Invalid input results in:
+
+```text
+HTTP 422
+```
 
 ---
 
-# Unknown Location
+# Unknown City and Location
 
-The training dataset contains:
+The API validates the categorical values before making a prediction.
+
+The model was trained using the cities and locations present in the training dataset.
+
+If the API receives a city or location that was not present during training, the request is rejected with a meaningful error instead of allowing an invalid prediction.
+
+For example:
+
+```json
+{
+  "area_sqft": 3153,
+  "bedrooms": 2,
+  "bathrooms": 2,
+  "age_years": 8,
+  "city": "UnknownCity",
+  "location": "Unknown Area"
+}
+```
+
+The API returns an appropriate error such as:
+
+```json
+{
+  "detail": "Unknown city or location"
+}
+```
+
+with HTTP status:
 
 ```text
-Lahore
-Islamabad
-```
-
-If a user sends an unknown location such as:
-
-```json
-{
-  "area": 1800,
-  "bedrooms": 3,
-  "bathrooms": 2,
-  "age": 5,
-  "location": "Multan"
-}
-```
-
-the API returns HTTP `400`:
-
-```json
-{
-  "detail": "Unknown location: Multan"
-}
+400
 ```
 
 ---
 
 # Error Handling
 
-The API handles the following cases:
+The API handles the following situations:
 
 | Situation                   | HTTP Status |
 | --------------------------- | ----------: |
 | Invalid input               |       `422` |
-| Unknown location            |       `400` |
+| Unknown city/location       |       `400` |
 | Missing model file          |       `503` |
 | Unexpected prediction error |       `500` |
+
+This prevents the application from crashing and provides meaningful responses to the user.
+
+---
+
+# Model Loading
+
+The trained model is loaded when the FastAPI application starts.
+
+The model loader uses:
+
+```python
+import joblib
+
+model = joblib.load("models/house_price_model.pkl")
+```
+
+The model is loaded once and kept in memory.
+
+This is better than loading the model every time `/predict` is called because:
+
+```text
+FastAPI starts
+      ↓
+Load model once
+      ↓
+Keep model in memory
+      ↓
+Multiple prediction requests
+      ↓
+Use the same model
+```
+
+This improves performance and avoids unnecessary model loading.
 
 ---
 
 # Installation
 
-## 1. Clone or Download the Project
+## 1. Navigate to the Project
 
-Navigate to the project directory:
+From the terminal:
 
 ```bash
-cd house-price-api
+cd "Part a project"
 ```
 
 ---
@@ -353,7 +601,7 @@ Open:
 http://127.0.0.1:8000/docs
 ```
 
-From Swagger, you can test:
+From Swagger, the following endpoints can be tested:
 
 ```text
 GET  /
@@ -397,29 +645,8 @@ Expected response:
 
 ---
 
-## Test Prediction Endpoint
 
-```bash
-curl -X POST "http://127.0.0.1:8000/predict" \
--H "Content-Type: application/json" \
--d '{
-  "area": 1800,
-  "bedrooms": 3,
-  "bathrooms": 2,
-  "age": 5,
-  "location": "Lahore"
-}'
-```
-
-Example response:
-
-```json
-{
-  "predicted_price": 12450000.0
-}
-```
-
-The exact prediction depends on the trained model.
+The exact predicted price depends on the input values and the trained model.
 
 ---
 
@@ -428,41 +655,50 @@ The exact prediction depends on the trained model.
 The complete Machine Learning and API flow is:
 
 ```text
-Dataset
-   ↓
-Data Cleaning
-   ↓
+House Price Dataset
+        ↓
+Data Checking and Cleaning
+        ↓
+Remove ID Column
+        ↓
 Feature Selection
-   ↓
-One-Hot Encoding
-   ↓
+        ↓
+Separate Target
+        ↓
 Train/Test Split
-   ↓
-Model Training
-   ↓
+        ↓
+One-Hot Encoding
+(city + location)
+        ↓
+Linear Regression
+        ↓
 Model Evaluation
-   ↓
-Model Selection
-   ↓
-Save Pipeline using Joblib
-   ↓
+        ↓
+MAE + R²
+        ↓
+Save Complete Pipeline
+        ↓
+house_price_model.pkl
+        ↓
 FastAPI Starts
-   ↓
-Load Saved Pipeline
-   ↓
-User Sends Prediction Request
-   ↓
+        ↓
+Load Saved Model
+        ↓
+User Sends Request
+        ↓
 Pydantic Validation
-   ↓
-Location Validation
-   ↓
+        ↓
+City/Location Validation
+        ↓
 Create DataFrame
-   ↓
-Saved Pipeline
-   ↓
+        ↓
+Saved ML Pipeline
+        ↓
 Prediction
-   ↓
-JSON Response
+        ↓
+Format Price
+        ↓
+Return Prediction + MAE + R²
 ```
 
 ---
@@ -471,48 +707,61 @@ JSON Response
 
 Machine Learning training and API serving have different responsibilities.
 
-The training process:
+## Machine Learning Side
+
+The training process is responsible for:
 
 ```text
 Dataset
    ↓
+Data Preparation
+   ↓
 Preprocessing
    ↓
-Training
+Train Model
    ↓
-Evaluation
+Evaluate Model
    ↓
 Save Model
 ```
 
-is performed separately.
+This work is performed in the Jupyter Notebook.
 
-The FastAPI application only needs to:
+## FastAPI Side
+
+The API is responsible for:
 
 ```text
 Load Saved Model
-      ↓
-Receive Input
-      ↓
+       ↓
+Receive User Input
+       ↓
+Validate Input
+       ↓
 Make Prediction
-      ↓
+       ↓
 Return Response
 ```
 
-This prevents the model from being retrained every time a user requests a prediction.
+The API does not train the model again.
 
-The trained model is loaded once when the FastAPI application starts and remains available in memory.
+This separation makes the application simpler, faster, and easier to maintain.
 
 ---
 
 # Model Serialization
 
-The trained Scikit-learn pipeline is saved using Joblib:
+The trained Scikit-learn pipeline is saved using Joblib.
+
+Example:
 
 ```python
 import joblib
 
-joblib.dump(model, "models/house_price_model.pkl")
+joblib.dump(
+    model,
+    "models/house_price_model.pkl"
+)
 ```
 
 The FastAPI application loads the saved pipeline:
@@ -520,16 +769,22 @@ The FastAPI application loads the saved pipeline:
 ```python
 import joblib
 
-model = joblib.load("models/house_price_model.pkl")
+model = joblib.load(
+    "models/house_price_model.pkl"
+)
 ```
 
-This allows the API to use the already-trained model without performing the training process again.
+This allows FastAPI to use the already-trained model without repeating the training process.
 
 ---
 
 # Requirements
 
-The project dependencies are listed in `requirements.txt`.
+The project dependencies are listed in:
+
+```text
+requirements.txt
+```
 
 Example:
 
@@ -543,7 +798,7 @@ uvicorn
 pydantic
 ```
 
-Install them with:
+Install all dependencies using:
 
 ```bash
 pip install -r requirements.txt
@@ -551,39 +806,90 @@ pip install -r requirements.txt
 
 ---
 
-# Project Files
+## Project Files
 
-## `app/main.py`
+### `app/main.py`
 
-Contains the FastAPI application and API endpoints.
+Contains:
 
-## `app/model_loader.py`
-
-Responsible for loading the saved Machine Learning model.
-
-## `app/prediction_service.py`
-
-Contains prediction-related logic.
-
-## `app/schemas.py`
-
-Contains Pydantic request and response schemas.
-
-## `data/houses.csv`
-
-Contains the house price dataset.
-
-## `models/house_price_model.pkl`
-
-Contains the trained Scikit-learn pipeline.
-
-## `requirements.txt`
-
-Contains the Python dependencies required to run the project.
+* FastAPI application
+* `/` endpoint
+* `/health` endpoint
+* `/predict` endpoint
+* HTTP error handling
+* Model initialization
 
 ---
 
-# Final Submission
+### `app/model_loader.py`
+
+Responsible for:
+
+* Finding the saved model
+* Loading the Joblib pipeline
+* Handling a missing model file
+
+---
+
+### `app/prediction_service.py`
+
+Responsible for:
+
+* Preparing prediction input
+* Sending input to the ML pipeline
+* Generating the prediction
+* Formatting the price
+* Returning MAE and R²
+
+---
+
+### `app/schemas.py`
+
+Contains the Pydantic request and response schemas.
+
+It validates:
+
+* Area
+* Bedrooms
+* Bathrooms
+* Age
+* City
+* Location
+
+---
+
+### `data/house_data.csv`
+
+Contains the new house price dataset.
+
+The dataset contains:
+
+```text
+60 rows
+8 columns
+```
+
+---
+
+### `models/house_price_model.pkl`
+
+Contains the trained Scikit-learn preprocessing and Linear Regression pipeline.
+
+---
+
+### `requirements.txt`
+
+Contains the Python packages required to run the project.
+
+---
+
+### `README.md`
+
+Contains project documentation, installation instructions, API usage, and project explanation.
+
+---
+
+### Final Submission
 
 The final project contains:
 
@@ -597,11 +903,45 @@ The final project contains:
 
 ---
 
-# Conclusion
+## Conclusion
 
-This project demonstrates how to combine a Machine Learning regression model with FastAPI to create a simple prediction API.
+This project demonstrates how to combine a Machine Learning regression model with FastAPI to create a simple house price prediction API.
 
-The Machine Learning pipeline handles preprocessing and prediction, while FastAPI handles request validation, API routing, error handling, and returning predictions as JSON responses.
+The Machine Learning pipeline:
+
+```text
+Dataset
+   ↓
+Preprocessing
+   ↓
+Linear Regression
+   ↓
+Evaluation
+   ↓
+Saved Pipeline
+```
+
+is created separately from the API.
+
+The FastAPI application:
+
+```text
+Load Model
+   ↓
+Validate User Input
+   ↓
+Receive House Details
+   ↓
+Make Prediction
+   ↓
+Format Price
+   ↓
+Return JSON Response
+```
+
+
+
+The API returns a human-readable predicted price along with these overall model evaluation metrics.
 
 ```
 ```
