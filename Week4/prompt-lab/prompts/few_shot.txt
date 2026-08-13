@@ -1,0 +1,33 @@
+Extract the job title, required experience in years, skills, and work type from the job description.
+
+Use the following examples as guidance.
+
+Example 1:
+
+Job description:
+Marketing Analyst needed with 2+ years of experience. Must know Excel, SQL, and Tableau. Remote position.
+
+Expected extraction:
+{
+  "job_title": "Marketing Analyst",
+  "experience_years": 2,
+  "skills": ["Excel", "SQL", "Tableau"],
+  "work_type": "Remote"
+}
+
+Example 2:
+
+Job description:
+Backend Engineer required. Experience with Python, FastAPI, and PostgreSQL preferred. Full-time position.
+
+Expected extraction:
+{
+  "job_title": "Backend Engineer",
+  "experience_years": null,
+  "skills": ["Python", "FastAPI", "PostgreSQL"],
+  "work_type": "Full-time"
+}
+
+Now extract the information from this job description:
+
+{{input}}

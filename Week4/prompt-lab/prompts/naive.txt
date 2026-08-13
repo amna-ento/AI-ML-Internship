@@ -1,0 +1,4 @@
+Extract the job title, required experience in years, skills, and work type from the following job description.
+
+Job description:
+{{input}}

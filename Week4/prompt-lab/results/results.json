@@ -1,0 +1,2482 @@
+[
+  {
+    "test_id": 1,
+    "prompt": "naive",
+    "input": "Data Science Director needed to lead product strategy and analytics vision. Must know Generative ML, Discriminative ML, Contrastive ML, Classification, Gradient Boosting, Causal Inference, AI, and advanced statistics. 8+ years of experience required. Full-time position.",
+    "expected": {
+      "job_title": "Data Science Director",
+      "experience_years": 8,
+      "skills": [
+        "Generative ML",
+        "Discriminative ML",
+        "Contrastive ML",
+        "Classification",
+        "Gradient Boosting",
+        "Causal Inference",
+        "AI",
+        "advanced statistics"
+      ],
+      "work_type": "Full-time"
+    },
+    "response": "**Job Title:** Data Science Director  \n**Required Experience:** 8+ years  \n**Key Skills:**  \n- Generative Machine Learning  \n- Discriminative Machine Learning  \n- Contrastive Machine Learning  \n- Classification algorithms  \n- Gradient Boosting  \n- Causal Inference  \n- Artificial Intelligence (AI)  \n- Advanced statistics  \n\n**Work Type:** Full‑time position",
+    "evaluation": {
+      "json_valid": false,
+      "field_accuracy": 0.0,
+      "skill_precision": 0.0,
+      "skill_recall": 0.0,
+      "skill_f1": 0.0,
+      "completeness": 0.0,
+      "overall_score": 0.0
+    }
+  },
+  {
+    "test_id": 2,
+    "prompt": "naive",
+    "input": "Senior Data Scientist needed to build large-scale semantic analysis and question-answering systems for medical data. Must know NLP, Machine Learning, Deep Learning, LLMs, Transformers, Information Extraction, NER, Entity Linking, and Q&A. 5+ years of experience required.",
+    "expected": {
+      "job_title": "Senior Data Scientist",
+      "experience_years": 5,
+      "skills": [
+        "NLP",
+        "Machine Learning",
+        "Deep Learning",
+        "LLMs",
+        "Transformers",
+        "Information Extraction",
+        "NER",
+        "Entity Linking",
+        "Q&A"
+      ],
+      "work_type": null
+    },
+    "response": "**Job Title:** Senior Data Scientist  \n**Required Experience:** 5 + years  \n**Skills:**  \n- Natural Language Processing (NLP)  \n- Machine Learning  \n- Deep Learning  \n- Large Language Models (LLMs)  \n- Transformers  \n- Information Extraction  \n- Named Entity Recognition (NER)  \n- Entity Linking  \n- Question‑Answering (Q&A)  \n\n**Work Type:** Not specified in the description.",
+    "evaluation": {
+      "json_valid": false,
+      "field_accuracy": 0.0,
+      "skill_precision": 0.0,
+      "skill_recall": 0.0,
+      "skill_f1": 0.0,
+      "completeness": 0.0,
+      "overall_score": 0.0
+    }
+  },
+  {
+    "test_id": 3,
+    "prompt": "naive",
+    "input": "Staff Data Scientist needed to drive business growth through data analysis, forecasting, and predictive modeling. Must know SQL, Python or R, statistical methods, and machine learning. Full-time position.",
+    "expected": {
+      "job_title": "Staff Data Scientist",
+      "experience_years": null,
+      "skills": [
+        "SQL",
+        "Python",
+        "R",
+        "statistical methods",
+        "machine learning"
+      ],
+      "work_type": "Full-time"
+    },
+    "response": "**Extracted Information**\n\n| Field | Value |\n|-------|-------|\n| **Job Title** | Staff Data Scientist |\n| **Required Experience (years)** | *Not specified* |\n| **Skills** | SQL, Python, R, statistical methods, machine learning |\n| **Work Type** | Full‑time |\n\n**JSON Representation**\n\n```json\n{\n  \"job_title\": \"Staff Data Scientist\",\n  \"required_experience_years\": null,\n  \"skills\": [\n    \"SQL\",\n    \"Python\",\n    \"R\",\n    \"statistical methods\",\n    \"machine learning\"\n  ],\n  \"work_type\": \"Full-time\"\n}\n```\n",
+    "evaluation": {
+      "json_valid": false,
+      "field_accuracy": 0.0,
+      "skill_precision": 0.0,
+      "skill_recall": 0.0,
+      "skill_f1": 0.0,
+      "completeness": 0.0,
+      "overall_score": 0.0
+    }
+  },
+  {
+    "test_id": 4,
+    "prompt": "naive",
+    "input": "Senior Staff Data Scientist needed to solve complex product and engineering problems using quantitative modeling and experimentation. Must know Machine Learning, Deep Learning, Statistical Modeling, Forecasting, Econometrics, PyTorch, TensorFlow, scikit-learn, SQL, Python, and R. 7+ years of experience required.",
+    "expected": {
+      "job_title": "Senior Staff Data Scientist",
+      "experience_years": 7,
+      "skills": [
+        "Machine Learning",
+        "Deep Learning",
+        "Statistical Modeling",
+        "Forecasting",
+        "Econometrics",
+        "PyTorch",
+        "TensorFlow",
+        "scikit-learn",
+        "SQL",
+        "Python",
+        "R"
+      ],
+      "work_type": null
+    },
+    "response": "**Extracted Information**\n\n| Field | Value |\n|-------|-------|\n| **Job Title** | Senior Staff Data Scientist |\n| **Required Experience** | 7+ years |\n| **Skills** | Machine Learning, Deep Learning, Statistical Modeling, Forecasting, Econometrics, PyTorch, TensorFlow, scikit‑learn, SQL, Python, R |\n| **Work Type** | Not specified |\n\n*(If the posting omitted a work‑type detail, it is marked as “Not specified.”)*\n",
+    "evaluation": {
+      "json_valid": false,
+      "field_accuracy": 0.0,
+      "skill_precision": 0.0,
+      "skill_recall": 0.0,
+      "skill_f1": 0.0,
+      "completeness": 0.0,
+      "overall_score": 0.0
+    }
+  },
+  {
+    "test_id": 5,
+    "prompt": "naive",
+    "input": "Staff Data Scientist needed for a Growth team to analyze web-scale data and solve product and business problems. Must know Python, R, SQL, Hive, experimentation design, experimentation analysis, metrics definition, and data pipeline prototyping. Full-time remote position.",
+    "expected": {
+      "job_title": "Staff Data Scientist",
+      "experience_years": null,
+      "skills": [
+        "Python",
+        "R",
+        "SQL",
+        "Hive",
+        "experimentation design",
+        "experimentation analysis",
+        "metrics definition",
+        "data pipeline prototyping"
+      ],
+      "work_type": "Remote"
+    },
+    "response": "**Job Title:** Staff Data Scientist  \n**Required Experience:** *Not specified in the posting*  \n**Key Skills:**  \n- Python  \n- R  \n- SQL  \n- Hive  \n- Experimentation design  \n- Experimentation analysis  \n- Metrics definition  \n- Data pipeline prototyping  \n\n**Work Type:** Full‑time, remote position  ",
+    "evaluation": {
+      "json_valid": false,
+      "field_accuracy": 0.0,
+      "skill_precision": 0.0,
+      "skill_recall": 0.0,
+      "skill_f1": 0.0,
+      "completeness": 0.0,
+      "overall_score": 0.0
+    }
+  },
+  {
+    "test_id": 6,
+    "prompt": "naive",
+    "input": "Staff Data Scientist needed for a Browse Discovery team to improve user-facing and business-facing products. Must know data analysis, quantitative modeling, Machine Learning, statistical modeling, forecasting, econometrics, PyTorch, TensorFlow, scikit-learn, SQL, Python, and R. 6+ years of experience required.",
+    "expected": {
+      "job_title": "Staff Data Scientist",
+      "experience_years": 6,
+      "skills": [
+        "data analysis",
+        "quantitative modeling",
+        "Machine Learning",
+        "statistical modeling",
+        "forecasting",
+        "econometrics",
+        "PyTorch",
+        "TensorFlow",
+        "scikit-learn",
+        "SQL",
+        "Python",
+        "R"
+      ],
+      "work_type": null
+    },
+    "response": "**Job Title:** Staff Data Scientist  \n**Required Experience:** 6 + years  \n**Key Skills:**  \n- Data analysis  \n- Quantitative modeling  \n- Machine Learning  \n- Statistical modeling  \n- Forecasting  \n- Econometrics  \n- PyTorch  \n- TensorFlow  \n- scikit‑learn  \n- SQL  \n- Python  \n- R  \n\n**Work Type:** Not specified in the description (likely full‑time, but not explicitly stated)",
+    "evaluation": {
+      "json_valid": false,
+      "field_accuracy": 0.0,
+      "skill_precision": 0.0,
+      "skill_recall": 0.0,
+      "skill_f1": 0.0,
+      "completeness": 0.0,
+      "overall_score": 0.0
+    }
+  },
+  {
+    "test_id": 7,
+    "prompt": "naive",
+    "input": "Senior Data Scientist needed for a Search team to develop product solutions using quantitative modeling and algorithms. Must know Machine Learning, statistical modeling, forecasting, econometrics, PyTorch, TensorFlow, scikit-learn, SQL, Python, R, and experimentation. Full-time position.",
+    "expected": {
+      "job_title": "Senior Data Scientist",
+      "experience_years": null,
+      "skills": [
+        "Machine Learning",
+        "statistical modeling",
+        "forecasting",
+        "econometrics",
+        "PyTorch",
+        "TensorFlow",
+        "scikit-learn",
+        "SQL",
+        "Python",
+        "R",
+        "experimentation"
+      ],
+      "work_type": "Full-time"
+    },
+    "response": "**Job Title:** Senior Data Scientist  \n**Required Experience:** Not explicitly stated (senior‑level role)  \n**Skills:**  \n- Machine Learning  \n- Statistical modeling  \n- Forecasting  \n- Econometrics  \n- PyTorch  \n- TensorFlow  \n- scikit‑learn  \n- SQL  \n- Python  \n- R  \n- Experimentation  \n\n**Work Type:** Full‑time position",
+    "evaluation": {
+      "json_valid": false,
+      "field_accuracy": 0.0,
+      "skill_precision": 0.0,
+      "skill_recall": 0.0,
+      "skill_f1": 0.0,
+      "completeness": 0.0,
+      "overall_score": 0.0
+    }
+  },
+  {
+    "test_id": 8,
+    "prompt": "naive",
+    "input": "Senior Data Scientist needed for a Growth team to apply scientific methods and machine learning to product development. Must know data analysis, Machine Learning, statistical modeling, forecasting, econometrics, PyTorch, TensorFlow, scikit-learn, SQL, Python, and R. 4+ years of experience required.",
+    "expected": {
+      "job_title": "Senior Data Scientist",
+      "experience_years": 4,
+      "skills": [
+        "data analysis",
+        "Machine Learning",
+        "statistical modeling",
+        "forecasting",
+        "econometrics",
+        "PyTorch",
+        "TensorFlow",
+        "scikit-learn",
+        "SQL",
+        "Python",
+        "R"
+      ],
+      "work_type": null
+    },
+    "response": "**Job Title:** Senior Data Scientist  \n**Required Experience:** 4 + years  \n**Skills:**  \n- Data analysis  \n- Machine Learning  \n- Statistical modeling  \n- Forecasting  \n- Econometrics  \n- PyTorch  \n- TensorFlow  \n- scikit‑learn  \n- SQL  \n- Python  \n- R  \n\n**Work Type:** Not specified in the description.",
+    "evaluation": {
+      "json_valid": false,
+      "field_accuracy": 0.0,
+      "skill_precision": 0.0,
+      "skill_recall": 0.0,
+      "skill_f1": 0.0,
+      "completeness": 0.0,
+      "overall_score": 0.0
+    }
+  },
+  {
+    "test_id": 9,
+    "prompt": "naive",
+    "input": "Senior Data Scientist needed to develop and deploy machine learning features across multiple products. Must have strong knowledge of computer vision, NLP, Deep Learning, ML algorithms, Python, and Large Language Models. Mentoring experience required. Full-time remote position.",
+    "expected": {
+      "job_title": "Senior Data Scientist",
+      "experience_years": null,
+      "skills": [
+        "computer vision",
+        "NLP",
+        "Deep Learning",
+        "ML algorithms",
+        "Python",
+        "Large Language Models"
+      ],
+      "work_type": "Remote"
+    },
+    "response": "**Job Title:** Senior Data Scientist  \n**Required Experience:** Not specified in the description (typically “Senior” implies several years, but no exact number given)  \n**Skills / Qualifications:**  \n- Computer Vision  \n- Natural Language Processing (NLP)  \n- Deep Learning  \n- Machine Learning algorithms  \n- Python programming  \n- Large Language Models (LLMs)  \n- Mentoring experience  \n\n**Work Type:** Full‑time, remote position",
+    "evaluation": {
+      "json_valid": false,
+      "field_accuracy": 0.0,
+      "skill_precision": 0.0,
+      "skill_recall": 0.0,
+      "skill_f1": 0.0,
+      "completeness": 0.0,
+      "overall_score": 0.0
+    }
+  },
+  {
+    "test_id": 10,
+    "prompt": "naive",
+    "input": "Lead Data Scientist needed to build and deploy machine learning solutions at scale. Must know data analysis, data mining, optimization, clustering, regression, classification, statistical inference, predictive modeling, algorithms, data structures, and software development. 6+ years of experience required.",
+    "expected": {
+      "job_title": "Lead Data Scientist",
+      "experience_years": 6,
+      "skills": [
+        "data analysis",
+        "data mining",
+        "optimization",
+        "clustering",
+        "regression",
+        "classification",
+        "statistical inference",
+        "predictive modeling",
+        "algorithms",
+        "data structures",
+        "software development"
+      ],
+      "work_type": null
+    },
+    "response": "**Extracted Information**\n\n| Field | Value |\n|-------|-------|\n| **Job Title** | Lead Data Scientist |\n| **Required Experience** | 6+ years (minimum 6 years) |\n| **Skills** | • Data analysis<br>• Data mining<br>• Optimization<br>• Clustering<br>• Regression<br>• Classification<br>• Statistical inference<br>• Predictive modeling<br>• Algorithms<br>• Data structures<br>• Software development |\n| **Work Type** | Not specified in the description |\n\n**JSON Representation**\n\n```json\n{\n  \"job_title\": \"Lead Data Scientist\",\n  \"required_experience_years\": \"6+\",\n  \"skills\": [\n    \"Data analysis\",\n    \"Data mining\",\n    \"Optimization\",\n    \"Clustering\",\n    \"Regression\",\n    \"Classification\",\n    \"Statistical inference\",\n    \"Predictive modeling\",\n    \"Algorithms\",\n    \"Data structures\",\n    \"Software development\"\n  ],\n  \"work_type\": \"Not specified\"\n}\n```\n",
+    "evaluation": {
+      "json_valid": false,
+      "field_accuracy": 0.0,
+      "skill_precision": 0.0,
+      "skill_recall": 0.0,
+      "skill_f1": 0.0,
+      "completeness": 0.0,
+      "overall_score": 0.0
+    }
+  },
+  {
+    "test_id": 11,
+    "prompt": "naive",
+    "input": "Data Scientist needed to extract insights from high-volume, high-dimensional datasets. Must know advanced statistical analysis, algorithms, predictive modeling, experimentation, pattern recognition, AI, Deep Learning, data structures, distributed systems, and software development. Full-time position.",
+    "expected": {
+      "job_title": "Data Scientist",
+      "experience_years": null,
+      "skills": [
+        "advanced statistical analysis",
+        "algorithms",
+        "predictive modeling",
+        "experimentation",
+        "pattern recognition",
+        "AI",
+        "Deep Learning",
+        "data structures",
+        "distributed systems",
+        "software development"
+      ],
+      "work_type": "Full-time"
+    },
+    "response": "**Extracted Information**\n\n| Field | Value |\n|-------|-------|\n| **Job Title** | Data Scientist |\n| **Required Experience (years)** | Not specified |\n| **Skills** | • Advanced statistical analysis<br>• Algorithms<br>• Predictive modeling<br>• Experimentation<br>• Pattern recognition<br>• AI (Artificial Intelligence)<br>• Deep Learning<br>• Data structures<br>• Distributed systems<br>• Software development |\n| **Work Type** | Full‑time |\n\n**JSON Representation**\n\n```json\n{\n  \"job_title\": \"Data Scientist\",\n  \"required_experience_years\": null,\n  \"skills\": [\n    \"Advanced statistical analysis\",\n    \"Algorithms\",\n    \"Predictive modeling\",\n    \"Experimentation\",\n    \"Pattern recognition\",\n    \"AI\",\n    \"Deep Learning\",\n    \"Data structures\",\n    \"Distributed systems\",\n    \"Software development\"\n  ],\n  \"work_type\": \"Full-time\"\n}\n```\n",
+    "evaluation": {
+      "json_valid": false,
+      "field_accuracy": 0.0,
+      "skill_precision": 0.0,
+      "skill_recall": 0.0,
+      "skill_f1": 0.0,
+      "completeness": 0.0,
+      "overall_score": 0.0
+    }
+  },
+  {
+    "test_id": 12,
+    "prompt": "naive",
+    "input": "Cybersecurity Data Scientist Manager needed to lead data science and engineering teams developing security analytics solutions. Must know Python, Databricks, Spark, microservices, cybersecurity datasets, machine learning, data parsing and cleansing, GitHub, Jira, and Agile Scrum. 8+ years of experience required. On-site position.",
+    "expected": {
+      "job_title": "Cybersecurity Data Scientist Manager",
+      "experience_years": 8,
+      "skills": [
+        "Python",
+        "Databricks",
+        "Spark",
+        "microservices",
+        "cybersecurity datasets",
+        "machine learning",
+        "data parsing and cleansing",
+        "GitHub",
+        "Jira",
+        "Agile Scrum"
+      ],
+      "work_type": "On-site"
+    },
+    "response": "**Job Title:** Cybersecurity Data Scientist Manager  \n**Required Experience:** 8 + years (minimum)  \n**Key Skills:**  \n- Python  \n- Databricks  \n- Spark  \n- Microservices  \n- Cybersecurity datasets  \n- Machine learning  \n- Data parsing & cleansing  \n- GitHub  \n- Jira  \n- Agile Scrum  \n\n**Work Type:** On‑site position",
+    "evaluation": {
+      "json_valid": false,
+      "field_accuracy": 0.0,
+      "skill_precision": 0.0,
+      "skill_recall": 0.0,
+      "skill_f1": 0.0,
+      "completeness": 0.0,
+      "overall_score": 0.0
+    }
+  },
+  {
+    "test_id": 13,
+    "prompt": "naive",
+    "input": "Senior Data Scientist needed to build credit and fraud machine learning models from feature engineering through production and monitoring. Must know Machine Learning, PySpark, and A/B testing. Full-time remote position.",
+    "expected": {
+      "job_title": "Senior Data Scientist",
+      "experience_years": null,
+      "skills": [
+        "Machine Learning",
+        "PySpark",
+        "A/B testing"
+      ],
+      "work_type": "Remote"
+    },
+    "response": "**Job Title:** Senior Data Scientist  \n**Required Experience:** Not specified in the posting (senior level implied)  \n**Key Skills:**  \n- Machine Learning  \n- PySpark  \n- A/B testing  \n\n**Work Type:** Full‑time, remote position  ",
+    "evaluation": {
+      "json_valid": false,
+      "field_accuracy": 0.0,
+      "skill_precision": 0.0,
+      "skill_recall": 0.0,
+      "skill_f1": 0.0,
+      "completeness": 0.0,
+      "overall_score": 0.0
+    }
+  },
+  {
+    "test_id": 14,
+    "prompt": "naive",
+    "input": "Senior NLP Data Scientist needed to develop AI-powered legal and contract management products. Must know Machine Learning, Deep Learning, NLP, RNNs, CNNs, Transformers, NER, Q&A, Python, TensorFlow, PyTorch, Spark, Databricks, and AWS SageMaker. 5+ years of experience required.",
+    "expected": {
+      "job_title": "Senior NLP Data Scientist",
+      "experience_years": 5,
+      "skills": [
+        "Machine Learning",
+        "Deep Learning",
+        "NLP",
+        "RNNs",
+        "CNNs",
+        "Transformers",
+        "NER",
+        "Q&A",
+        "Python",
+        "TensorFlow",
+        "PyTorch",
+        "Spark",
+        "Databricks",
+        "AWS SageMaker"
+      ],
+      "work_type": null
+    },
+    "response": "**Job Title:** Senior NLP Data Scientist  \n**Required Experience:** 5 + years  \n**Key Skills:**  \n- Machine Learning  \n- Deep Learning  \n- Natural Language Processing (NLP)  \n- Recurrent Neural Networks (RNNs)  \n- Convolutional Neural Networks (CNNs)  \n- Transformers  \n- Named Entity Recognition (NER)  \n- Question‑Answering (Q&A)  \n- Python  \n- TensorFlow  \n- PyTorch  \n- Apache Spark  \n- Databricks  \n- AWS SageMaker  \n\n**Work Type:** Not specified in the description (likely full‑time, but not explicitly stated).",
+    "evaluation": {
+      "json_valid": false,
+      "field_accuracy": 0.0,
+      "skill_precision": 0.0,
+      "skill_recall": 0.0,
+      "skill_f1": 0.0,
+      "completeness": 0.0,
+      "overall_score": 0.0
+    }
+  },
+  {
+    "test_id": 15,
+    "prompt": "naive",
+    "input": "Principal Data Scientist needed to lead the development of advanced AI/ML products and machine learning platforms. Must know Machine Learning, NLP, personalization and ranking, Deep Learning, Generative AI, LLMs, MLOps, Python, SQL, Databricks, Snowflake, and Kubernetes. Full-time position.",
+    "expected": {
+      "job_title": "Principal Data Scientist",
+      "experience_years": null,
+      "skills": [
+        "Machine Learning",
+        "NLP",
+        "personalization and ranking",
+        "Deep Learning",
+        "Generative AI",
+        "LLMs",
+        "MLOps",
+        "Python",
+        "SQL",
+        "Databricks",
+        "Snowflake",
+        "Kubernetes"
+      ],
+      "work_type": "Full-time"
+    },
+    "response": "**Job Title:** Principal Data Scientist  \n**Required Experience:** Not specified in the description (no explicit years mentioned)  \n**Key Skills:**  \n- Machine Learning  \n- Natural Language Processing (NLP)  \n- Personalization & Ranking  \n- Deep Learning  \n- Generative AI  \n- Large Language Models (LLMs)  \n- MLOps  \n- Python  \n- SQL  \n- Databricks  \n- Snowflake  \n- Kubernetes  \n\n**Work Type:** Full‑time position  ",
+    "evaluation": {
+      "json_valid": false,
+      "field_accuracy": 0.0,
+      "skill_precision": 0.0,
+      "skill_recall": 0.0,
+      "skill_f1": 0.0,
+      "completeness": 0.0,
+      "overall_score": 0.0
+    }
+  },
+  {
+    "test_id": 16,
+    "prompt": "naive",
+    "input": "Senior AI/ML Data Scientist needed to design, build, and deploy data-driven AI/ML solutions. Must know Deep Learning, PyTorch, NLP, Generative AI, Python, SQL, cloud data warehouses, RDBMS, and data wrangling. 5+ years of experience required. Remote position.",
+    "expected": {
+      "job_title": "Senior AI/ML Data Scientist",
+      "experience_years": 5,
+      "skills": [
+        "Deep Learning",
+        "PyTorch",
+        "NLP",
+        "Generative AI",
+        "Python",
+        "SQL",
+        "cloud data warehouses",
+        "RDBMS",
+        "data wrangling"
+      ],
+      "work_type": "Remote"
+    },
+    "response": "**Job Title:** Senior AI/ML Data Scientist  \n**Required Experience:** 5+ years  \n**Key Skills:**  \n- Deep Learning  \n- PyTorch  \n- Natural Language Processing (NLP)  \n- Generative AI  \n- Python  \n- SQL  \n- Cloud data warehouses  \n- Relational Database Management Systems (RDBMS)  \n- Data wrangling  \n\n**Work Type:** Remote position  ",
+    "evaluation": {
+      "json_valid": false,
+      "field_accuracy": 0.0,
+      "skill_precision": 0.0,
+      "skill_recall": 0.0,
+      "skill_f1": 0.0,
+      "completeness": 0.0,
+      "overall_score": 0.0
+    }
+  },
+  {
+    "test_id": 17,
+    "prompt": "naive",
+    "input": "Data Scientist needed to develop models for energy-market analytics and clean-tech applications. Must know Classical Machine Learning, Deep Learning, Python, NumPy, Pandas, SciPy, time series modeling, and advanced statistics. Full-time position.",
+    "expected": {
+      "job_title": "Data Scientist",
+      "experience_years": null,
+      "skills": [
+        "Classical Machine Learning",
+        "Deep Learning",
+        "Python",
+        "NumPy",
+        "Pandas",
+        "SciPy",
+        "time series modeling",
+        "advanced statistics"
+      ],
+      "work_type": "Full-time"
+    },
+    "response": "**Job Title:** Data Scientist  \n**Required Experience:** Not specified (no explicit years mentioned)  \n**Skills:**  \n- Classical Machine Learning  \n- Deep Learning  \n- Python  \n- NumPy  \n- Pandas  \n- SciPy  \n- Time‑series modeling  \n- Advanced statistics  \n\n**Work Type:** Full‑time position",
+    "evaluation": {
+      "json_valid": false,
+      "field_accuracy": 0.0,
+      "skill_precision": 0.0,
+      "skill_recall": 0.0,
+      "skill_f1": 0.0,
+      "completeness": 0.0,
+      "overall_score": 0.0
+    }
+  },
+  {
+    "test_id": 18,
+    "prompt": "naive",
+    "input": "Forecast Analyst needed to manage forecasting and projection models for a retail call center. Must know forecasting, predictive modeling, Machine Learning, advanced statistics, SQL, Python, R, business analysis, Excel, PowerPoint, and workforce management. 3+ years of experience required.",
+    "expected": {
+      "job_title": "Forecast Analyst",
+      "experience_years": 3,
+      "skills": [
+        "forecasting",
+        "predictive modeling",
+        "Machine Learning",
+        "advanced statistics",
+        "SQL",
+        "Python",
+        "R",
+        "business analysis",
+        "Excel",
+        "PowerPoint",
+        "workforce management"
+      ],
+      "work_type": null
+    },
+    "response": "**Job Title:** Forecast Analyst  \n**Required Experience:** 3+ years  \n**Skills:**  \n- Forecasting  \n- Predictive modeling  \n- Machine Learning  \n- Advanced statistics  \n- SQL  \n- Python  \n- R  \n- Business analysis  \n- Excel  \n- PowerPoint  \n- Workforce management  \n\n**Work Type:** Not specified  ",
+    "evaluation": {
+      "json_valid": false,
+      "field_accuracy": 0.0,
+      "skill_precision": 0.0,
+      "skill_recall": 0.0,
+      "skill_f1": 0.0,
+      "completeness": 0.0,
+      "overall_score": 0.0
+    }
+  },
+  {
+    "test_id": 19,
+    "prompt": "naive",
+    "input": "Lead Data Scientist needed to develop analytics solutions for retail pharmacy payer analytics, pricing, reimbursement, and margin optimization. Must know SQL, Python, Machine Learning, optimization, mathematics, statistics, A/B testing, data visualization, and Tableau. Full-time remote position.",
+    "expected": {
+      "job_title": "Lead Data Scientist",
+      "experience_years": null,
+      "skills": [
+        "SQL",
+        "Python",
+        "Machine Learning",
+        "optimization",
+        "mathematics",
+        "statistics",
+        "A/B testing",
+        "data visualization",
+        "Tableau"
+      ],
+      "work_type": "Remote"
+    },
+    "response": "**Extracted Information**\n\n| Field | Value |\n|-------|-------|\n| **Job Title** | Lead Data Scientist |\n| **Required Experience (years)** | Not specified in the description |\n| **Skills** | SQL, Python, Machine Learning, Optimization, Mathematics, Statistics, A/B Testing, Data Visualization, Tableau |\n| **Work Type** | Full‑time, remote |\n\n**JSON Representation**\n\n```json\n{\n  \"job_title\": \"Lead Data Scientist\",\n  \"required_experience_years\": null,\n  \"skills\": [\n    \"SQL\",\n    \"Python\",\n    \"Machine Learning\",\n    \"Optimization\",\n    \"Mathematics\",\n    \"Statistics\",\n    \"A/B Testing\",\n    \"Data Visualization\",\n    \"Tableau\"\n  ],\n  \"work_type\": \"Full-time remote\"\n}\n```\n",
+    "evaluation": {
+      "json_valid": false,
+      "field_accuracy": 0.0,
+      "skill_precision": 0.0,
+      "skill_recall": 0.0,
+      "skill_f1": 0.0,
+      "completeness": 0.0,
+      "overall_score": 0.0
+    }
+  },
+  {
+    "test_id": 20,
+    "prompt": "naive",
+    "input": "Research Scientist needed to conduct independent research on complex machine learning problems and responsible AI. Must have strong knowledge of Machine Learning fundamentals and experience contributing to ML research. 4+ years of experience required. Full-time position.",
+    "expected": {
+      "job_title": "Research Scientist",
+      "experience_years": 4,
+      "skills": [
+        "Machine Learning fundamentals",
+        "ML research"
+      ],
+      "work_type": "Full-time"
+    },
+    "response": "**Extracted Information**\n\n| Field | Value |\n|-------|-------|\n| **Job Title** | Research Scientist |\n| **Required Experience** | 4+ years |\n| **Skills** | • Machine Learning fundamentals<br>• Experience contributing to ML research<br>• Independent research on complex ML problems<br>• Responsible AI |\n| **Work Type** | Full‑time |\n\n**JSON Representation**\n\n```json\n{\n  \"job_title\": \"Research Scientist\",\n  \"required_experience_years\": \"4+\",\n  \"skills\": [\n    \"Machine Learning fundamentals\",\n    \"Experience contributing to ML research\",\n    \"Independent research on complex ML problems\",\n    \"Responsible AI\"\n  ],\n  \"work_type\": \"Full-time\"\n}\n```\n",
+    "evaluation": {
+      "json_valid": false,
+      "field_accuracy": 0.0,
+      "skill_precision": 0.0,
+      "skill_recall": 0.0,
+      "skill_f1": 0.0,
+      "completeness": 0.0,
+      "overall_score": 0.0
+    }
+  },
+  {
+    "test_id": 1,
+    "prompt": "few_shot",
+    "input": "Data Science Director needed to lead product strategy and analytics vision. Must know Generative ML, Discriminative ML, Contrastive ML, Classification, Gradient Boosting, Causal Inference, AI, and advanced statistics. 8+ years of experience required. Full-time position.",
+    "expected": {
+      "job_title": "Data Science Director",
+      "experience_years": 8,
+      "skills": [
+        "Generative ML",
+        "Discriminative ML",
+        "Contrastive ML",
+        "Classification",
+        "Gradient Boosting",
+        "Causal Inference",
+        "AI",
+        "advanced statistics"
+      ],
+      "work_type": "Full-time"
+    },
+    "response": "```json\n{\n  \"job_title\": \"Data Science Director\",\n  \"experience_years\": 8,\n  \"skills\": [\n    \"Generative ML\",\n    \"Discriminative ML\",\n    \"Contrastive ML\",\n    \"Classification\",\n    \"Gradient Boosting\",\n    \"Causal Inference\",\n    \"AI\",\n    \"advanced statistics\"\n  ],\n  \"work_type\": \"Full-time\"\n}\n```",
+    "evaluation": {
+      "json_valid": false,
+      "field_accuracy": 0.0,
+      "skill_precision": 0.0,
+      "skill_recall": 0.0,
+      "skill_f1": 0.0,
+      "completeness": 0.0,
+      "overall_score": 0.0
+    }
+  },
+  {
+    "test_id": 2,
+    "prompt": "few_shot",
+    "input": "Senior Data Scientist needed to build large-scale semantic analysis and question-answering systems for medical data. Must know NLP, Machine Learning, Deep Learning, LLMs, Transformers, Information Extraction, NER, Entity Linking, and Q&A. 5+ years of experience required.",
+    "expected": {
+      "job_title": "Senior Data Scientist",
+      "experience_years": 5,
+      "skills": [
+        "NLP",
+        "Machine Learning",
+        "Deep Learning",
+        "LLMs",
+        "Transformers",
+        "Information Extraction",
+        "NER",
+        "Entity Linking",
+        "Q&A"
+      ],
+      "work_type": null
+    },
+    "response": "```json\n{\n  \"job_title\": \"Senior Data Scientist\",\n  \"experience_years\": 5,\n  \"skills\": [\n    \"NLP\",\n    \"Machine Learning\",\n    \"Deep Learning\",\n    \"LLMs\",\n    \"Transformers\",\n    \"Information Extraction\",\n    \"NER\",\n    \"Entity Linking\",\n    \"Q&A\"\n  ],\n  \"work_type\": null\n}\n```",
+    "evaluation": {
+      "json_valid": false,
+      "field_accuracy": 0.0,
+      "skill_precision": 0.0,
+      "skill_recall": 0.0,
+      "skill_f1": 0.0,
+      "completeness": 0.0,
+      "overall_score": 0.0
+    }
+  },
+  {
+    "test_id": 3,
+    "prompt": "few_shot",
+    "input": "Staff Data Scientist needed to drive business growth through data analysis, forecasting, and predictive modeling. Must know SQL, Python or R, statistical methods, and machine learning. Full-time position.",
+    "expected": {
+      "job_title": "Staff Data Scientist",
+      "experience_years": null,
+      "skills": [
+        "SQL",
+        "Python",
+        "R",
+        "statistical methods",
+        "machine learning"
+      ],
+      "work_type": "Full-time"
+    },
+    "response": "```json\n{\n  \"job_title\": \"Staff Data Scientist\",\n  \"experience_years\": null,\n  \"skills\": [\"SQL\", \"Python\", \"R\", \"statistical methods\", \"machine learning\"],\n  \"work_type\": \"Full-time\"\n}\n```",
+    "evaluation": {
+      "json_valid": false,
+      "field_accuracy": 0.0,
+      "skill_precision": 0.0,
+      "skill_recall": 0.0,
+      "skill_f1": 0.0,
+      "completeness": 0.0,
+      "overall_score": 0.0
+    }
+  },
+  {
+    "test_id": 4,
+    "prompt": "few_shot",
+    "input": "Senior Staff Data Scientist needed to solve complex product and engineering problems using quantitative modeling and experimentation. Must know Machine Learning, Deep Learning, Statistical Modeling, Forecasting, Econometrics, PyTorch, TensorFlow, scikit-learn, SQL, Python, and R. 7+ years of experience required.",
+    "expected": {
+      "job_title": "Senior Staff Data Scientist",
+      "experience_years": 7,
+      "skills": [
+        "Machine Learning",
+        "Deep Learning",
+        "Statistical Modeling",
+        "Forecasting",
+        "Econometrics",
+        "PyTorch",
+        "TensorFlow",
+        "scikit-learn",
+        "SQL",
+        "Python",
+        "R"
+      ],
+      "work_type": null
+    },
+    "response": "```json\n{\n  \"job_title\": \"Senior Staff Data Scientist\",\n  \"experience_years\": 7,\n  \"skills\": [\n    \"Machine Learning\",\n    \"Deep Learning\",\n    \"Statistical Modeling\",\n    \"Forecasting\",\n    \"Econometrics\",\n    \"PyTorch\",\n    \"TensorFlow\",\n    \"scikit-learn\",\n    \"SQL\",\n    \"Python\",\n    \"R\"\n  ],\n  \"work_type\": null\n}\n```",
+    "evaluation": {
+      "json_valid": false,
+      "field_accuracy": 0.0,
+      "skill_precision": 0.0,
+      "skill_recall": 0.0,
+      "skill_f1": 0.0,
+      "completeness": 0.0,
+      "overall_score": 0.0
+    }
+  },
+  {
+    "test_id": 5,
+    "prompt": "few_shot",
+    "input": "Staff Data Scientist needed for a Growth team to analyze web-scale data and solve product and business problems. Must know Python, R, SQL, Hive, experimentation design, experimentation analysis, metrics definition, and data pipeline prototyping. Full-time remote position.",
+    "expected": {
+      "job_title": "Staff Data Scientist",
+      "experience_years": null,
+      "skills": [
+        "Python",
+        "R",
+        "SQL",
+        "Hive",
+        "experimentation design",
+        "experimentation analysis",
+        "metrics definition",
+        "data pipeline prototyping"
+      ],
+      "work_type": "Remote"
+    },
+    "response": "```json\n{\n  \"job_title\": \"Staff Data Scientist\",\n  \"experience_years\": null,\n  \"skills\": [\n    \"Python\",\n    \"R\",\n    \"SQL\",\n    \"Hive\",\n    \"experimentation design\",\n    \"experimentation analysis\",\n    \"metrics definition\",\n    \"data pipeline prototyping\"\n  ],\n  \"work_type\": \"Full-time remote\"\n}\n```",
+    "evaluation": {
+      "json_valid": false,
+      "field_accuracy": 0.0,
+      "skill_precision": 0.0,
+      "skill_recall": 0.0,
+      "skill_f1": 0.0,
+      "completeness": 0.0,
+      "overall_score": 0.0
+    }
+  },
+  {
+    "test_id": 6,
+    "prompt": "few_shot",
+    "input": "Staff Data Scientist needed for a Browse Discovery team to improve user-facing and business-facing products. Must know data analysis, quantitative modeling, Machine Learning, statistical modeling, forecasting, econometrics, PyTorch, TensorFlow, scikit-learn, SQL, Python, and R. 6+ years of experience required.",
+    "expected": {
+      "job_title": "Staff Data Scientist",
+      "experience_years": 6,
+      "skills": [
+        "data analysis",
+        "quantitative modeling",
+        "Machine Learning",
+        "statistical modeling",
+        "forecasting",
+        "econometrics",
+        "PyTorch",
+        "TensorFlow",
+        "scikit-learn",
+        "SQL",
+        "Python",
+        "R"
+      ],
+      "work_type": null
+    },
+    "response": "```json\n{\n  \"job_title\": \"Staff Data Scientist\",\n  \"experience_years\": 6,\n  \"skills\": [\n    \"data analysis\",\n    \"quantitative modeling\",\n    \"Machine Learning\",\n    \"statistical modeling\",\n    \"forecasting\",\n    \"econometrics\",\n    \"PyTorch\",\n    \"TensorFlow\",\n    \"scikit-learn\",\n    \"SQL\",\n    \"Python\",\n    \"R\"\n  ],\n  \"work_type\": null\n}\n```",
+    "evaluation": {
+      "json_valid": false,
+      "field_accuracy": 0.0,
+      "skill_precision": 0.0,
+      "skill_recall": 0.0,
+      "skill_f1": 0.0,
+      "completeness": 0.0,
+      "overall_score": 0.0
+    }
+  },
+  {
+    "test_id": 7,
+    "prompt": "few_shot",
+    "input": "Senior Data Scientist needed for a Search team to develop product solutions using quantitative modeling and algorithms. Must know Machine Learning, statistical modeling, forecasting, econometrics, PyTorch, TensorFlow, scikit-learn, SQL, Python, R, and experimentation. Full-time position.",
+    "expected": {
+      "job_title": "Senior Data Scientist",
+      "experience_years": null,
+      "skills": [
+        "Machine Learning",
+        "statistical modeling",
+        "forecasting",
+        "econometrics",
+        "PyTorch",
+        "TensorFlow",
+        "scikit-learn",
+        "SQL",
+        "Python",
+        "R",
+        "experimentation"
+      ],
+      "work_type": "Full-time"
+    },
+    "response": "```json\n{\n  \"job_title\": \"Senior Data Scientist\",\n  \"experience_years\": null,\n  \"skills\": [\n    \"Machine Learning\",\n    \"statistical modeling\",\n    \"forecasting\",\n    \"econometrics\",\n    \"PyTorch\",\n    \"TensorFlow\",\n    \"scikit-learn\",\n    \"SQL\",\n    \"Python\",\n    \"R\",\n    \"experimentation\"\n  ],\n  \"work_type\": \"Full-time\"\n}\n```",
+    "evaluation": {
+      "json_valid": false,
+      "field_accuracy": 0.0,
+      "skill_precision": 0.0,
+      "skill_recall": 0.0,
+      "skill_f1": 0.0,
+      "completeness": 0.0,
+      "overall_score": 0.0
+    }
+  },
+  {
+    "test_id": 8,
+    "prompt": "few_shot",
+    "input": "Senior Data Scientist needed for a Growth team to apply scientific methods and machine learning to product development. Must know data analysis, Machine Learning, statistical modeling, forecasting, econometrics, PyTorch, TensorFlow, scikit-learn, SQL, Python, and R. 4+ years of experience required.",
+    "expected": {
+      "job_title": "Senior Data Scientist",
+      "experience_years": 4,
+      "skills": [
+        "data analysis",
+        "Machine Learning",
+        "statistical modeling",
+        "forecasting",
+        "econometrics",
+        "PyTorch",
+        "TensorFlow",
+        "scikit-learn",
+        "SQL",
+        "Python",
+        "R"
+      ],
+      "work_type": null
+    },
+    "response": "```json\n{\n  \"job_title\": \"Senior Data Scientist\",\n  \"experience_years\": 4,\n  \"skills\": [\n    \"data analysis\",\n    \"Machine Learning\",\n    \"statistical modeling\",\n    \"forecasting\",\n    \"econometrics\",\n    \"PyTorch\",\n    \"TensorFlow\",\n    \"scikit-learn\",\n    \"SQL\",\n    \"Python\",\n    \"R\"\n  ],\n  \"work_type\": null\n}\n```",
+    "evaluation": {
+      "json_valid": false,
+      "field_accuracy": 0.0,
+      "skill_precision": 0.0,
+      "skill_recall": 0.0,
+      "skill_f1": 0.0,
+      "completeness": 0.0,
+      "overall_score": 0.0
+    }
+  },
+  {
+    "test_id": 9,
+    "prompt": "few_shot",
+    "input": "Senior Data Scientist needed to develop and deploy machine learning features across multiple products. Must have strong knowledge of computer vision, NLP, Deep Learning, ML algorithms, Python, and Large Language Models. Mentoring experience required. Full-time remote position.",
+    "expected": {
+      "job_title": "Senior Data Scientist",
+      "experience_years": null,
+      "skills": [
+        "computer vision",
+        "NLP",
+        "Deep Learning",
+        "ML algorithms",
+        "Python",
+        "Large Language Models"
+      ],
+      "work_type": "Remote"
+    },
+    "response": "```json\n{\n  \"job_title\": \"Senior Data Scientist\",\n  \"experience_years\": null,\n  \"skills\": [\n    \"Computer Vision\",\n    \"NLP\",\n    \"Deep Learning\",\n    \"ML Algorithms\",\n    \"Python\",\n    \"Large Language Models\"\n  ],\n  \"work_type\": \"Full-time remote\"\n}\n```",
+    "evaluation": {
+      "json_valid": false,
+      "field_accuracy": 0.0,
+      "skill_precision": 0.0,
+      "skill_recall": 0.0,
+      "skill_f1": 0.0,
+      "completeness": 0.0,
+      "overall_score": 0.0
+    }
+  },
+  {
+    "test_id": 10,
+    "prompt": "few_shot",
+    "input": "Lead Data Scientist needed to build and deploy machine learning solutions at scale. Must know data analysis, data mining, optimization, clustering, regression, classification, statistical inference, predictive modeling, algorithms, data structures, and software development. 6+ years of experience required.",
+    "expected": {
+      "job_title": "Lead Data Scientist",
+      "experience_years": 6,
+      "skills": [
+        "data analysis",
+        "data mining",
+        "optimization",
+        "clustering",
+        "regression",
+        "classification",
+        "statistical inference",
+        "predictive modeling",
+        "algorithms",
+        "data structures",
+        "software development"
+      ],
+      "work_type": null
+    },
+    "response": "```json\n{\n  \"job_title\": \"Lead Data Scientist\",\n  \"experience_years\": 6,\n  \"skills\": [\n    \"data analysis\",\n    \"data mining\",\n    \"optimization\",\n    \"clustering\",\n    \"regression\",\n    \"classification\",\n    \"statistical inference\",\n    \"predictive modeling\",\n    \"algorithms\",\n    \"data structures\",\n    \"software development\"\n  ],\n  \"work_type\": null\n}\n```",
+    "evaluation": {
+      "json_valid": false,
+      "field_accuracy": 0.0,
+      "skill_precision": 0.0,
+      "skill_recall": 0.0,
+      "skill_f1": 0.0,
+      "completeness": 0.0,
+      "overall_score": 0.0
+    }
+  },
+  {
+    "test_id": 11,
+    "prompt": "few_shot",
+    "input": "Data Scientist needed to extract insights from high-volume, high-dimensional datasets. Must know advanced statistical analysis, algorithms, predictive modeling, experimentation, pattern recognition, AI, Deep Learning, data structures, distributed systems, and software development. Full-time position.",
+    "expected": {
+      "job_title": "Data Scientist",
+      "experience_years": null,
+      "skills": [
+        "advanced statistical analysis",
+        "algorithms",
+        "predictive modeling",
+        "experimentation",
+        "pattern recognition",
+        "AI",
+        "Deep Learning",
+        "data structures",
+        "distributed systems",
+        "software development"
+      ],
+      "work_type": "Full-time"
+    },
+    "response": "```json\n{\n  \"job_title\": \"Data Scientist\",\n  \"experience_years\": null,\n  \"skills\": [\n    \"advanced statistical analysis\",\n    \"algorithms\",\n    \"predictive modeling\",\n    \"experimentation\",\n    \"pattern recognition\",\n    \"AI\",\n    \"Deep Learning\",\n    \"data structures\",\n    \"distributed systems\",\n    \"software development\"\n  ],\n  \"work_type\": \"Full-time\"\n}\n```",
+    "evaluation": {
+      "json_valid": false,
+      "field_accuracy": 0.0,
+      "skill_precision": 0.0,
+      "skill_recall": 0.0,
+      "skill_f1": 0.0,
+      "completeness": 0.0,
+      "overall_score": 0.0
+    }
+  },
+  {
+    "test_id": 12,
+    "prompt": "few_shot",
+    "input": "Cybersecurity Data Scientist Manager needed to lead data science and engineering teams developing security analytics solutions. Must know Python, Databricks, Spark, microservices, cybersecurity datasets, machine learning, data parsing and cleansing, GitHub, Jira, and Agile Scrum. 8+ years of experience required. On-site position.",
+    "expected": {
+      "job_title": "Cybersecurity Data Scientist Manager",
+      "experience_years": 8,
+      "skills": [
+        "Python",
+        "Databricks",
+        "Spark",
+        "microservices",
+        "cybersecurity datasets",
+        "machine learning",
+        "data parsing and cleansing",
+        "GitHub",
+        "Jira",
+        "Agile Scrum"
+      ],
+      "work_type": "On-site"
+    },
+    "response": "```json\n{\n  \"job_title\": \"Cybersecurity Data Scientist Manager\",\n  \"experience_years\": 8,\n  \"skills\": [\n    \"Python\",\n    \"Databricks\",\n    \"Spark\",\n    \"microservices\",\n    \"cybersecurity datasets\",\n    \"machine learning\",\n    \"data parsing and cleansing\",\n    \"GitHub\",\n    \"Jira\",\n    \"Agile Scrum\"\n  ],\n  \"work_type\": \"On-site\"\n}\n```",
+    "evaluation": {
+      "json_valid": false,
+      "field_accuracy": 0.0,
+      "skill_precision": 0.0,
+      "skill_recall": 0.0,
+      "skill_f1": 0.0,
+      "completeness": 0.0,
+      "overall_score": 0.0
+    }
+  },
+  {
+    "test_id": 13,
+    "prompt": "few_shot",
+    "input": "Senior Data Scientist needed to build credit and fraud machine learning models from feature engineering through production and monitoring. Must know Machine Learning, PySpark, and A/B testing. Full-time remote position.",
+    "expected": {
+      "job_title": "Senior Data Scientist",
+      "experience_years": null,
+      "skills": [
+        "Machine Learning",
+        "PySpark",
+        "A/B testing"
+      ],
+      "work_type": "Remote"
+    },
+    "response": "{\n  \"job_title\": \"Senior Data Scientist\",\n  \"experience_years\": null,\n  \"skills\": [\"Machine Learning\", \"PySpark\", \"A/B testing\"],\n  \"work_type\": \"Full-time Remote\"\n}",
+    "evaluation": {
+      "json_valid": true,
+      "field_accuracy": 0.75,
+      "skill_precision": 1.0,
+      "skill_recall": 1.0,
+      "skill_f1": 1.0,
+      "completeness": 0.8333333333333334,
+      "overall_score": 0.875
+    }
+  },
+  {
+    "test_id": 14,
+    "prompt": "few_shot",
+    "input": "Senior NLP Data Scientist needed to develop AI-powered legal and contract management products. Must know Machine Learning, Deep Learning, NLP, RNNs, CNNs, Transformers, NER, Q&A, Python, TensorFlow, PyTorch, Spark, Databricks, and AWS SageMaker. 5+ years of experience required.",
+    "expected": {
+      "job_title": "Senior NLP Data Scientist",
+      "experience_years": 5,
+      "skills": [
+        "Machine Learning",
+        "Deep Learning",
+        "NLP",
+        "RNNs",
+        "CNNs",
+        "Transformers",
+        "NER",
+        "Q&A",
+        "Python",
+        "TensorFlow",
+        "PyTorch",
+        "Spark",
+        "Databricks",
+        "AWS SageMaker"
+      ],
+      "work_type": null
+    },
+    "response": "```json\n{\n  \"job_title\": \"Senior NLP Data Scientist\",\n  \"experience_years\": 5,\n  \"skills\": [\n    \"Machine Learning\",\n    \"Deep Learning\",\n    \"NLP\",\n    \"RNNs\",\n    \"CNNs\",\n    \"Transformers\",\n    \"NER\",\n    \"Q&A\",\n    \"Python\",\n    \"TensorFlow\",\n    \"PyTorch\",\n    \"Spark\",\n    \"Databricks\",\n    \"AWS SageMaker\"\n  ],\n  \"work_type\": null\n}\n```",
+    "evaluation": {
+      "json_valid": false,
+      "field_accuracy": 0.0,
+      "skill_precision": 0.0,
+      "skill_recall": 0.0,
+      "skill_f1": 0.0,
+      "completeness": 0.0,
+      "overall_score": 0.0
+    }
+  },
+  {
+    "test_id": 15,
+    "prompt": "few_shot",
+    "input": "Principal Data Scientist needed to lead the development of advanced AI/ML products and machine learning platforms. Must know Machine Learning, NLP, personalization and ranking, Deep Learning, Generative AI, LLMs, MLOps, Python, SQL, Databricks, Snowflake, and Kubernetes. Full-time position.",
+    "expected": {
+      "job_title": "Principal Data Scientist",
+      "experience_years": null,
+      "skills": [
+        "Machine Learning",
+        "NLP",
+        "personalization and ranking",
+        "Deep Learning",
+        "Generative AI",
+        "LLMs",
+        "MLOps",
+        "Python",
+        "SQL",
+        "Databricks",
+        "Snowflake",
+        "Kubernetes"
+      ],
+      "work_type": "Full-time"
+    },
+    "response": "```json\n{\n  \"job_title\": \"Principal Data Scientist\",\n  \"experience_years\": null,\n  \"skills\": [\n    \"Machine Learning\",\n    \"NLP\",\n    \"personalization\",\n    \"ranking\",\n    \"Deep Learning\",\n    \"Generative AI\",\n    \"LLMs\",\n    \"MLOps\",\n    \"Python\",\n    \"SQL\",\n    \"Databricks\",\n    \"Snowflake\",\n    \"Kubernetes\"\n  ],\n  \"work_type\": \"Full-time\"\n}\n```",
+    "evaluation": {
+      "json_valid": false,
+      "field_accuracy": 0.0,
+      "skill_precision": 0.0,
+      "skill_recall": 0.0,
+      "skill_f1": 0.0,
+      "completeness": 0.0,
+      "overall_score": 0.0
+    }
+  },
+  {
+    "test_id": 16,
+    "prompt": "few_shot",
+    "input": "Senior AI/ML Data Scientist needed to design, build, and deploy data-driven AI/ML solutions. Must know Deep Learning, PyTorch, NLP, Generative AI, Python, SQL, cloud data warehouses, RDBMS, and data wrangling. 5+ years of experience required. Remote position.",
+    "expected": {
+      "job_title": "Senior AI/ML Data Scientist",
+      "experience_years": 5,
+      "skills": [
+        "Deep Learning",
+        "PyTorch",
+        "NLP",
+        "Generative AI",
+        "Python",
+        "SQL",
+        "cloud data warehouses",
+        "RDBMS",
+        "data wrangling"
+      ],
+      "work_type": "Remote"
+    },
+    "response": "```json\n{\n  \"job_title\": \"Senior AI/ML Data Scientist\",\n  \"experience_years\": 5,\n  \"skills\": [\n    \"Deep Learning\",\n    \"PyTorch\",\n    \"NLP\",\n    \"Generative AI\",\n    \"Python\",\n    \"SQL\",\n    \"cloud data warehouses\",\n    \"RDBMS\",\n    \"data wrangling\"\n  ],\n  \"work_type\": \"Remote\"\n}\n```",
+    "evaluation": {
+      "json_valid": false,
+      "field_accuracy": 0.0,
+      "skill_precision": 0.0,
+      "skill_recall": 0.0,
+      "skill_f1": 0.0,
+      "completeness": 0.0,
+      "overall_score": 0.0
+    }
+  },
+  {
+    "test_id": 17,
+    "prompt": "few_shot",
+    "input": "Data Scientist needed to develop models for energy-market analytics and clean-tech applications. Must know Classical Machine Learning, Deep Learning, Python, NumPy, Pandas, SciPy, time series modeling, and advanced statistics. Full-time position.",
+    "expected": {
+      "job_title": "Data Scientist",
+      "experience_years": null,
+      "skills": [
+        "Classical Machine Learning",
+        "Deep Learning",
+        "Python",
+        "NumPy",
+        "Pandas",
+        "SciPy",
+        "time series modeling",
+        "advanced statistics"
+      ],
+      "work_type": "Full-time"
+    },
+    "response": "```json\n{\n  \"job_title\": \"Data Scientist\",\n  \"experience_years\": null,\n  \"skills\": [\n    \"Classical Machine Learning\",\n    \"Deep Learning\",\n    \"Python\",\n    \"NumPy\",\n    \"Pandas\",\n    \"SciPy\",\n    \"time series modeling\",\n    \"advanced statistics\"\n  ],\n  \"work_type\": \"Full-time\"\n}\n```",
+    "evaluation": {
+      "json_valid": false,
+      "field_accuracy": 0.0,
+      "skill_precision": 0.0,
+      "skill_recall": 0.0,
+      "skill_f1": 0.0,
+      "completeness": 0.0,
+      "overall_score": 0.0
+    }
+  },
+  {
+    "test_id": 18,
+    "prompt": "few_shot",
+    "input": "Forecast Analyst needed to manage forecasting and projection models for a retail call center. Must know forecasting, predictive modeling, Machine Learning, advanced statistics, SQL, Python, R, business analysis, Excel, PowerPoint, and workforce management. 3+ years of experience required.",
+    "expected": {
+      "job_title": "Forecast Analyst",
+      "experience_years": 3,
+      "skills": [
+        "forecasting",
+        "predictive modeling",
+        "Machine Learning",
+        "advanced statistics",
+        "SQL",
+        "Python",
+        "R",
+        "business analysis",
+        "Excel",
+        "PowerPoint",
+        "workforce management"
+      ],
+      "work_type": null
+    },
+    "response": "```json\n{\n  \"job_title\": \"Forecast Analyst\",\n  \"experience_years\": 3,\n  \"skills\": [\n    \"forecasting\",\n    \"predictive modeling\",\n    \"Machine Learning\",\n    \"advanced statistics\",\n    \"SQL\",\n    \"Python\",\n    \"R\",\n    \"business analysis\",\n    \"Excel\",\n    \"PowerPoint\",\n    \"workforce management\"\n  ],\n  \"work_type\": null\n}\n```",
+    "evaluation": {
+      "json_valid": false,
+      "field_accuracy": 0.0,
+      "skill_precision": 0.0,
+      "skill_recall": 0.0,
+      "skill_f1": 0.0,
+      "completeness": 0.0,
+      "overall_score": 0.0
+    }
+  },
+  {
+    "test_id": 19,
+    "prompt": "few_shot",
+    "input": "Lead Data Scientist needed to develop analytics solutions for retail pharmacy payer analytics, pricing, reimbursement, and margin optimization. Must know SQL, Python, Machine Learning, optimization, mathematics, statistics, A/B testing, data visualization, and Tableau. Full-time remote position.",
+    "expected": {
+      "job_title": "Lead Data Scientist",
+      "experience_years": null,
+      "skills": [
+        "SQL",
+        "Python",
+        "Machine Learning",
+        "optimization",
+        "mathematics",
+        "statistics",
+        "A/B testing",
+        "data visualization",
+        "Tableau"
+      ],
+      "work_type": "Remote"
+    },
+    "response": "{\n  \"job_title\": \"Lead Data Scientist\",\n  \"experience_years\": null,\n  \"skills\": [\n    \"SQL\",\n    \"Python\",\n    \"Machine Learning\",\n    \"optimization\",\n    \"mathematics\",\n    \"statistics\",\n    \"A/B testing\",\n    \"data visualization\",\n    \"Tableau\"\n  ],\n  \"work_type\": \"Full-time remote\"\n}",
+    "evaluation": {
+      "json_valid": true,
+      "field_accuracy": 0.75,
+      "skill_precision": 1.0,
+      "skill_recall": 1.0,
+      "skill_f1": 1.0,
+      "completeness": 0.9166666666666666,
+      "overall_score": 0.875
+    }
+  },
+  {
+    "test_id": 20,
+    "prompt": "few_shot",
+    "input": "Research Scientist needed to conduct independent research on complex machine learning problems and responsible AI. Must have strong knowledge of Machine Learning fundamentals and experience contributing to ML research. 4+ years of experience required. Full-time position.",
+    "expected": {
+      "job_title": "Research Scientist",
+      "experience_years": 4,
+      "skills": [
+        "Machine Learning fundamentals",
+        "ML research"
+      ],
+      "work_type": "Full-time"
+    },
+    "response": "```json\n{\n  \"job_title\": \"Research Scientist\",\n  \"experience_years\": 4,\n  \"skills\": [\n    \"Machine Learning fundamentals\",\n    \"ML research\",\n    \"Responsible AI\"\n  ],\n  \"work_type\": \"Full-time\"\n}\n```",
+    "evaluation": {
+      "json_valid": false,
+      "field_accuracy": 0.0,
+      "skill_precision": 0.0,
+      "skill_recall": 0.0,
+      "skill_f1": 0.0,
+      "completeness": 0.0,
+      "overall_score": 0.0
+    }
+  },
+  {
+    "test_id": 1,
+    "prompt": "reasoning",
+    "input": "Data Science Director needed to lead product strategy and analytics vision. Must know Generative ML, Discriminative ML, Contrastive ML, Classification, Gradient Boosting, Causal Inference, AI, and advanced statistics. 8+ years of experience required. Full-time position.",
+    "expected": {
+      "job_title": "Data Science Director",
+      "experience_years": 8,
+      "skills": [
+        "Generative ML",
+        "Discriminative ML",
+        "Contrastive ML",
+        "Classification",
+        "Gradient Boosting",
+        "Causal Inference",
+        "AI",
+        "advanced statistics"
+      ],
+      "work_type": "Full-time"
+    },
+    "response": "**Extracted Information**\n\n| Field               | Value                                                                 |\n|---------------------|-----------------------------------------------------------------------|\n| Primary Job Title   | Data Science Director                                                 |\n| Minimum Experience  | 8 years                                                              |\n| Technical/Professional Skills | Generative ML, Discriminative ML, Contrastive ML, Classification, Gradient Boosting, Causal Inference, AI, advanced statistics |\n| Work Arrangement    | Full‑time                                                             |",
+    "evaluation": {
+      "json_valid": false,
+      "field_accuracy": 0.0,
+      "skill_precision": 0.0,
+      "skill_recall": 0.0,
+      "skill_f1": 0.0,
+      "completeness": 0.0,
+      "overall_score": 0.0
+    }
+  },
+  {
+    "test_id": 2,
+    "prompt": "reasoning",
+    "input": "Senior Data Scientist needed to build large-scale semantic analysis and question-answering systems for medical data. Must know NLP, Machine Learning, Deep Learning, LLMs, Transformers, Information Extraction, NER, Entity Linking, and Q&A. 5+ years of experience required.",
+    "expected": {
+      "job_title": "Senior Data Scientist",
+      "experience_years": 5,
+      "skills": [
+        "NLP",
+        "Machine Learning",
+        "Deep Learning",
+        "LLMs",
+        "Transformers",
+        "Information Extraction",
+        "NER",
+        "Entity Linking",
+        "Q&A"
+      ],
+      "work_type": null
+    },
+    "response": "**Extracted Information**\n\n| Field | Value |\n|-------|-------|\n| **Primary Job Title** | Senior Data Scientist |\n| **Minimum Required Years of Experience** | 5 |\n| **Technical / Professional Skills** | NLP, Machine Learning, Deep Learning, LLMs, Transformers, Information Extraction, NER, Entity Linking, Q&A |\n| **Work Arrangement** | null |\n\n**JSON Representation**\n\n```json\n{\n  \"title\": \"Senior Data Scientist\",\n  \"min_experience_years\": 5,\n  \"skills\": [\n    \"NLP\",\n    \"Machine Learning\",\n    \"Deep Learning\",\n    \"LLMs\",\n    \"Transformers\",\n    \"Information Extraction\",\n    \"NER\",\n    \"Entity Linking\",\n    \"Q&A\"\n  ],\n  \"work_arrangement\": null\n}\n```\n",
+    "evaluation": {
+      "json_valid": false,
+      "field_accuracy": 0.0,
+      "skill_precision": 0.0,
+      "skill_recall": 0.0,
+      "skill_f1": 0.0,
+      "completeness": 0.0,
+      "overall_score": 0.0
+    }
+  },
+  {
+    "test_id": 3,
+    "prompt": "reasoning",
+    "input": "Staff Data Scientist needed to drive business growth through data analysis, forecasting, and predictive modeling. Must know SQL, Python or R, statistical methods, and machine learning. Full-time position.",
+    "expected": {
+      "job_title": "Staff Data Scientist",
+      "experience_years": null,
+      "skills": [
+        "SQL",
+        "Python",
+        "R",
+        "statistical methods",
+        "machine learning"
+      ],
+      "work_type": "Full-time"
+    },
+    "response": "**Extracted Information**\n\n| Field | Value |\n|-------|-------|\n| **Primary Job Title** | Staff Data Scientist |\n| **Minimum Required Years of Experience** | null |\n| **Technical/Professional Skills** | SQL, Python, R, statistical methods, machine learning |\n| **Work Arrangement** | Full-time |\n\n**JSON Representation**\n\n```json\n{\n  \"title\": \"Staff Data Scientist\",\n  \"min_experience_years\": null,\n  \"skills\": [\n    \"SQL\",\n    \"Python\",\n    \"R\",\n    \"statistical methods\",\n    \"machine learning\"\n  ],\n  \"work_arrangement\": \"Full-time\"\n}\n```\n",
+    "evaluation": {
+      "json_valid": false,
+      "field_accuracy": 0.0,
+      "skill_precision": 0.0,
+      "skill_recall": 0.0,
+      "skill_f1": 0.0,
+      "completeness": 0.0,
+      "overall_score": 0.0
+    }
+  },
+  {
+    "test_id": 4,
+    "prompt": "reasoning",
+    "input": "Senior Staff Data Scientist needed to solve complex product and engineering problems using quantitative modeling and experimentation. Must know Machine Learning, Deep Learning, Statistical Modeling, Forecasting, Econometrics, PyTorch, TensorFlow, scikit-learn, SQL, Python, and R. 7+ years of experience required.",
+    "expected": {
+      "job_title": "Senior Staff Data Scientist",
+      "experience_years": 7,
+      "skills": [
+        "Machine Learning",
+        "Deep Learning",
+        "Statistical Modeling",
+        "Forecasting",
+        "Econometrics",
+        "PyTorch",
+        "TensorFlow",
+        "scikit-learn",
+        "SQL",
+        "Python",
+        "R"
+      ],
+      "work_type": null
+    },
+    "response": "**Extracted Information**\n\n| Field | Value |\n|-------|-------|\n| **Primary Job Title** | Senior Staff Data Scientist |\n| **Minimum Required Years of Experience** | 7 |\n| **Technical / Professional Skills** | Machine Learning, Deep Learning, Statistical Modeling, Forecasting, Econometrics, PyTorch, TensorFlow, scikit‑learn, SQL, Python, R |\n| **Work Arrangement** | null |\n\n**JSON Representation**\n\n```json\n{\n  \"title\": \"Senior Staff Data Scientist\",\n  \"min_experience_years\": 7,\n  \"skills\": [\n    \"Machine Learning\",\n    \"Deep Learning\",\n    \"Statistical Modeling\",\n    \"Forecasting\",\n    \"Econometrics\",\n    \"PyTorch\",\n    \"TensorFlow\",\n    \"scikit-learn\",\n    \"SQL\",\n    \"Python\",\n    \"R\"\n  ],\n  \"work_arrangement\": null\n}\n```\n",
+    "evaluation": {
+      "json_valid": false,
+      "field_accuracy": 0.0,
+      "skill_precision": 0.0,
+      "skill_recall": 0.0,
+      "skill_f1": 0.0,
+      "completeness": 0.0,
+      "overall_score": 0.0
+    }
+  },
+  {
+    "test_id": 5,
+    "prompt": "reasoning",
+    "input": "Staff Data Scientist needed for a Growth team to analyze web-scale data and solve product and business problems. Must know Python, R, SQL, Hive, experimentation design, experimentation analysis, metrics definition, and data pipeline prototyping. Full-time remote position.",
+    "expected": {
+      "job_title": "Staff Data Scientist",
+      "experience_years": null,
+      "skills": [
+        "Python",
+        "R",
+        "SQL",
+        "Hive",
+        "experimentation design",
+        "experimentation analysis",
+        "metrics definition",
+        "data pipeline prototyping"
+      ],
+      "work_type": "Remote"
+    },
+    "response": "**Extracted Information**\n\n```json\n{\n",
+    "evaluation": {
+      "json_valid": false,
+      "field_accuracy": 0.0,
+      "skill_precision": 0.0,
+      "skill_recall": 0.0,
+      "skill_f1": 0.0,
+      "completeness": 0.0,
+      "overall_score": 0.0
+    }
+  },
+  {
+    "test_id": 6,
+    "prompt": "reasoning",
+    "input": "Staff Data Scientist needed for a Browse Discovery team to improve user-facing and business-facing products. Must know data analysis, quantitative modeling, Machine Learning, statistical modeling, forecasting, econometrics, PyTorch, TensorFlow, scikit-learn, SQL, Python, and R. 6+ years of experience required.",
+    "expected": {
+      "job_title": "Staff Data Scientist",
+      "experience_years": 6,
+      "skills": [
+        "data analysis",
+        "quantitative modeling",
+        "Machine Learning",
+        "statistical modeling",
+        "forecasting",
+        "econometrics",
+        "PyTorch",
+        "TensorFlow",
+        "scikit-learn",
+        "SQL",
+        "Python",
+        "R"
+      ],
+      "work_type": null
+    },
+    "response": "**Extracted Information**\n\n| Field | Value |\n|-------|-------|\n| **Primary Job Title** | Staff Data Scientist |\n| **Minimum Required Years of Experience** | 6 |\n| **Technical / Professional Skills** | data analysis, quantitative modeling, Machine Learning, statistical modeling, forecasting, econometrics, PyTorch, TensorFlow, scikit-learn, SQL, Python, R |\n| **Work Arrangement** | null |\n\n**JSON Representation**\n\n```json\n{\n  \"title\": \"Staff Data Scientist\",\n  \"min_experience_years\": 6,\n  \"skills\": [\n    \"data analysis\",\n    \"quantitative modeling\",\n    \"Machine Learning\",\n    \"statistical modeling\",\n    \"forecasting\",\n    \"econometrics\",\n    \"PyTorch\",\n    \"TensorFlow\",\n    \"scikit-learn\",\n    \"SQL\",\n    \"Python\",\n    \"R\"\n  ],\n  \"work_arrangement\": null\n}\n```\n",
+    "evaluation": {
+      "json_valid": false,
+      "field_accuracy": 0.0,
+      "skill_precision": 0.0,
+      "skill_recall": 0.0,
+      "skill_f1": 0.0,
+      "completeness": 0.0,
+      "overall_score": 0.0
+    }
+  },
+  {
+    "test_id": 7,
+    "prompt": "reasoning",
+    "input": "Senior Data Scientist needed for a Search team to develop product solutions using quantitative modeling and algorithms. Must know Machine Learning, statistical modeling, forecasting, econometrics, PyTorch, TensorFlow, scikit-learn, SQL, Python, R, and experimentation. Full-time position.",
+    "expected": {
+      "job_title": "Senior Data Scientist",
+      "experience_years": null,
+      "skills": [
+        "Machine Learning",
+        "statistical modeling",
+        "forecasting",
+        "econometrics",
+        "PyTorch",
+        "TensorFlow",
+        "scikit-learn",
+        "SQL",
+        "Python",
+        "R",
+        "experimentation"
+      ],
+      "work_type": "Full-time"
+    },
+    "response": "**Extracted Information**\n\n| Field | Value |\n|-------|-------|\n| **Primary Job Title** | Senior Data Scientist |\n| **Minimum Required Years of Experience** | null |\n| **Technical / Professional Skills** | Machine Learning, statistical modeling, forecasting, econometrics, PyTorch, TensorFlow, scikit-learn, SQL, Python, R, experimentation |\n| **Work Arrangement** | Full-time |",
+    "evaluation": {
+      "json_valid": false,
+      "field_accuracy": 0.0,
+      "skill_precision": 0.0,
+      "skill_recall": 0.0,
+      "skill_f1": 0.0,
+      "completeness": 0.0,
+      "overall_score": 0.0
+    }
+  },
+  {
+    "test_id": 8,
+    "prompt": "reasoning",
+    "input": "Senior Data Scientist needed for a Growth team to apply scientific methods and machine learning to product development. Must know data analysis, Machine Learning, statistical modeling, forecasting, econometrics, PyTorch, TensorFlow, scikit-learn, SQL, Python, and R. 4+ years of experience required.",
+    "expected": {
+      "job_title": "Senior Data Scientist",
+      "experience_years": 4,
+      "skills": [
+        "data analysis",
+        "Machine Learning",
+        "statistical modeling",
+        "forecasting",
+        "econometrics",
+        "PyTorch",
+        "TensorFlow",
+        "scikit-learn",
+        "SQL",
+        "Python",
+        "R"
+      ],
+      "work_type": null
+    },
+    "response": "**Extracted Information**\n\n| Field | Value |\n|-------|-------|\n| **Primary Job Title** | Senior Data Scientist |\n| **Minimum Required Years of Experience** | 4 |\n| **Explicitly Mentioned Skills** | data analysis, Machine Learning, statistical modeling, forecasting, econometrics, PyTorch, TensorFlow, scikit-learn, SQL, Python, R |\n| **Work Arrangement** | null |\n\n**JSON Representation**\n\n```json\n{\n  \"title\": \"Senior Data Scientist\",\n  \"min_experience_years\": 4,\n  \"skills\": [\n    \"data analysis\",\n    \"Machine Learning\",\n    \"statistical modeling\",\n    \"forecasting\",\n    \"econometrics\",\n    \"PyTorch\",\n    \"TensorFlow\",\n    \"scikit-learn\",\n    \"SQL\",\n    \"Python\",\n    \"R\"\n  ],\n  \"work_arrangement\": null\n}\n```\n",
+    "evaluation": {
+      "json_valid": false,
+      "field_accuracy": 0.0,
+      "skill_precision": 0.0,
+      "skill_recall": 0.0,
+      "skill_f1": 0.0,
+      "completeness": 0.0,
+      "overall_score": 0.0
+    }
+  },
+  {
+    "test_id": 9,
+    "prompt": "reasoning",
+    "input": "Senior Data Scientist needed to develop and deploy machine learning features across multiple products. Must have strong knowledge of computer vision, NLP, Deep Learning, ML algorithms, Python, and Large Language Models. Mentoring experience required. Full-time remote position.",
+    "expected": {
+      "job_title": "Senior Data Scientist",
+      "experience_years": null,
+      "skills": [
+        "computer vision",
+        "NLP",
+        "Deep Learning",
+        "ML algorithms",
+        "Python",
+        "Large Language Models"
+      ],
+      "work_type": "Remote"
+    },
+    "response": "",
+    "evaluation": {
+      "json_valid": false,
+      "field_accuracy": 0.0,
+      "skill_precision": 0.0,
+      "skill_recall": 0.0,
+      "skill_f1": 0.0,
+      "completeness": 0.0,
+      "overall_score": 0.0
+    }
+  },
+  {
+    "test_id": 10,
+    "prompt": "reasoning",
+    "input": "Lead Data Scientist needed to build and deploy machine learning solutions at scale. Must know data analysis, data mining, optimization, clustering, regression, classification, statistical inference, predictive modeling, algorithms, data structures, and software development. 6+ years of experience required.",
+    "expected": {
+      "job_title": "Lead Data Scientist",
+      "experience_years": 6,
+      "skills": [
+        "data analysis",
+        "data mining",
+        "optimization",
+        "clustering",
+        "regression",
+        "classification",
+        "statistical inference",
+        "predictive modeling",
+        "algorithms",
+        "data structures",
+        "software development"
+      ],
+      "work_type": null
+    },
+    "response": "**Extracted Information**\n\n```json\n{\n  \"title\": \"Lead Data Scientist\",\n  \"min_experience_years\": 6,\n  \"skills\": [\n    \"data analysis\",\n    \"data mining\",\n    \"optimization\",\n    \"clustering\",\n    \"regression\",\n    \"classification\",\n    \"statistical inference\",\n    \"predictive modeling\",\n    \"algorithms\",\n    \"data structures\",\n    \"software development\"\n  ],\n  \"work_arrangement\": null\n}\n```\n",
+    "evaluation": {
+      "json_valid": false,
+      "field_accuracy": 0.0,
+      "skill_precision": 0.0,
+      "skill_recall": 0.0,
+      "skill_f1": 0.0,
+      "completeness": 0.0,
+      "overall_score": 0.0
+    }
+  },
+  {
+    "test_id": 11,
+    "prompt": "reasoning",
+    "input": "Data Scientist needed to extract insights from high-volume, high-dimensional datasets. Must know advanced statistical analysis, algorithms, predictive modeling, experimentation, pattern recognition, AI, Deep Learning, data structures, distributed systems, and software development. Full-time position.",
+    "expected": {
+      "job_title": "Data Scientist",
+      "experience_years": null,
+      "skills": [
+        "advanced statistical analysis",
+        "algorithms",
+        "predictive modeling",
+        "experimentation",
+        "pattern recognition",
+        "AI",
+        "Deep Learning",
+        "data structures",
+        "distributed systems",
+        "software development"
+      ],
+      "work_type": "Full-time"
+    },
+    "response": "**Extracted Information**\n\n```json\n{\n  \"title\": \"Data Scientist\",\n  \"minimum_experience_years\": null,\n  \"skills\": [\n    \"advanced statistical analysis\",\n    \"algorithms\",\n    \"predictive modeling\",\n    \"experimentation\",\n    \"pattern recognition\",\n    \"AI\",\n    \"Deep Learning\",\n    \"data structures\",\n    \"distributed systems\",\n    \"software development\"\n  ],\n  \"work_arrangement\": \"Full-time\"\n}\n```",
+    "evaluation": {
+      "json_valid": false,
+      "field_accuracy": 0.0,
+      "skill_precision": 0.0,
+      "skill_recall": 0.0,
+      "skill_f1": 0.0,
+      "completeness": 0.0,
+      "overall_score": 0.0
+    }
+  },
+  {
+    "test_id": 12,
+    "prompt": "reasoning",
+    "input": "Cybersecurity Data Scientist Manager needed to lead data science and engineering teams developing security analytics solutions. Must know Python, Databricks, Spark, microservices, cybersecurity datasets, machine learning, data parsing and cleansing, GitHub, Jira, and Agile Scrum. 8+ years of experience required. On-site position.",
+    "expected": {
+      "job_title": "Cybersecurity Data Scientist Manager",
+      "experience_years": 8,
+      "skills": [
+        "Python",
+        "Databricks",
+        "Spark",
+        "microservices",
+        "cybersecurity datasets",
+        "machine learning",
+        "data parsing and cleansing",
+        "GitHub",
+        "Jira",
+        "Agile Scrum"
+      ],
+      "work_type": "On-site"
+    },
+    "response": "**Extracted Information**\n\n| Field | Value |\n|-------|-------|\n| **Job Title** | Cybersecurity Data Scientist Manager |\n| **Minimum Experience (years)** | 8 |\n| **Skills** | Python, Databricks, Spark, microservices, cybersecurity datasets, machine learning, data parsing and cleansing, GitHub, Jira, Agile Scrum |\n| **Work Arrangement** | On‑site |",
+    "evaluation": {
+      "json_valid": false,
+      "field_accuracy": 0.0,
+      "skill_precision": 0.0,
+      "skill_recall": 0.0,
+      "skill_f1": 0.0,
+      "completeness": 0.0,
+      "overall_score": 0.0
+    }
+  },
+  {
+    "test_id": 13,
+    "prompt": "reasoning",
+    "input": "Senior Data Scientist needed to build credit and fraud machine learning models from feature engineering through production and monitoring. Must know Machine Learning, PySpark, and A/B testing. Full-time remote position.",
+    "expected": {
+      "job_title": "Senior Data Scientist",
+      "experience_years": null,
+      "skills": [
+        "Machine Learning",
+        "PySpark",
+        "A/B testing"
+      ],
+      "work_type": "Remote"
+    },
+    "response": "**Extracted Information**\n\n| Field | Value |\n|-------|-------|\n| **Primary Job Title** | Senior Data Scientist |\n| **Minimum Required Years of Experience** | null |\n| **Technical / Professional Skills** | Machine Learning, PySpark, A/B testing, feature engineering |\n| **Work Arrangement** | Full-time, Remote |\n\n**Structured Output (JSON)**\n\n```json\n{\n  \"title\": \"Senior Data Scientist\",\n  \"min_experience_years\": null,\n  \"skills\": [\n    \"Machine Learning\",\n    \"PySpark\",\n    \"A/B testing\",\n    \"feature engineering\"\n  ],\n  \"work_arrangement\": [\n    \"Full-time\",\n    \"Remote\"\n  ]\n}\n```\n",
+    "evaluation": {
+      "json_valid": false,
+      "field_accuracy": 0.0,
+      "skill_precision": 0.0,
+      "skill_recall": 0.0,
+      "skill_f1": 0.0,
+      "completeness": 0.0,
+      "overall_score": 0.0
+    }
+  },
+  {
+    "test_id": 14,
+    "prompt": "reasoning",
+    "input": "Senior NLP Data Scientist needed to develop AI-powered legal and contract management products. Must know Machine Learning, Deep Learning, NLP, RNNs, CNNs, Transformers, NER, Q&A, Python, TensorFlow, PyTorch, Spark, Databricks, and AWS SageMaker. 5+ years of experience required.",
+    "expected": {
+      "job_title": "Senior NLP Data Scientist",
+      "experience_years": 5,
+      "skills": [
+        "Machine Learning",
+        "Deep Learning",
+        "NLP",
+        "RNNs",
+        "CNNs",
+        "Transformers",
+        "NER",
+        "Q&A",
+        "Python",
+        "TensorFlow",
+        "PyTorch",
+        "Spark",
+        "Databricks",
+        "AWS SageMaker"
+      ],
+      "work_type": null
+    },
+    "response": "**Extracted Information**\n\n```json\n{\n  \"title\": \"Senior NLP Data Scientist\",\n  \"min_experience_years\": 5,\n  \"skills\": [\n    \"Machine Learning\",\n    \"Deep Learning\",\n    \"NLP\",\n    \"RNNs\",\n    \"CNNs\",\n    \"Transformers\",\n    \"NER\",\n    \"Q&A\",\n    \"Python\",\n    \"TensorFlow\",\n    \"PyTorch\",\n    \"Spark\",\n    \"Databricks\",\n    \"AWS SageMaker\"\n  ],\n  \"work_arrangement\": null\n}\n```\n",
+    "evaluation": {
+      "json_valid": false,
+      "field_accuracy": 0.0,
+      "skill_precision": 0.0,
+      "skill_recall": 0.0,
+      "skill_f1": 0.0,
+      "completeness": 0.0,
+      "overall_score": 0.0
+    }
+  },
+  {
+    "test_id": 15,
+    "prompt": "reasoning",
+    "input": "Principal Data Scientist needed to lead the development of advanced AI/ML products and machine learning platforms. Must know Machine Learning, NLP, personalization and ranking, Deep Learning, Generative AI, LLMs, MLOps, Python, SQL, Databricks, Snowflake, and Kubernetes. Full-time position.",
+    "expected": {
+      "job_title": "Principal Data Scientist",
+      "experience_years": null,
+      "skills": [
+        "Machine Learning",
+        "NLP",
+        "personalization and ranking",
+        "Deep Learning",
+        "Generative AI",
+        "LLMs",
+        "MLOps",
+        "Python",
+        "SQL",
+        "Databricks",
+        "Snowflake",
+        "Kubernetes"
+      ],
+      "work_type": "Full-time"
+    },
+    "response": "**Extracted Information**\n\n| Field | Value |\n|-------|-------|\n| **Primary Job Title** | Principal Data Scientist |\n| **Minimum Required Years of Experience** | null |\n| **Technical / Professional Skills** | Machine Learning, NLP, personalization and ranking, Deep Learning, Generative AI, LLMs, MLOps, Python, SQL, Databricks, Snowflake, Kubernetes |\n| **Work Arrangement** | Full-time |\n\n**JSON Representation**\n\n```json\n{\n  \"job_title\": \"Principal Data Scientist\",\n  \"minimum_experience_years\": null,\n  \"skills\": [\n    \"Machine Learning\",\n    \"NLP\",\n    \"personalization and ranking\",\n    \"Deep Learning\",\n    \"Generative AI\",\n    \"LLMs\",\n    \"MLOps\",\n    \"Python\",\n    \"SQL\",\n    \"Databricks\",\n    \"Snowflake\",\n    \"Kubernetes\"\n  ],\n  \"work_arrangement\": \"Full-time\"\n}\n```\n",
+    "evaluation": {
+      "json_valid": false,
+      "field_accuracy": 0.0,
+      "skill_precision": 0.0,
+      "skill_recall": 0.0,
+      "skill_f1": 0.0,
+      "completeness": 0.0,
+      "overall_score": 0.0
+    }
+  },
+  {
+    "test_id": 16,
+    "prompt": "reasoning",
+    "input": "Senior AI/ML Data Scientist needed to design, build, and deploy data-driven AI/ML solutions. Must know Deep Learning, PyTorch, NLP, Generative AI, Python, SQL, cloud data warehouses, RDBMS, and data wrangling. 5+ years of experience required. Remote position.",
+    "expected": {
+      "job_title": "Senior AI/ML Data Scientist",
+      "experience_years": 5,
+      "skills": [
+        "Deep Learning",
+        "PyTorch",
+        "NLP",
+        "Generative AI",
+        "Python",
+        "SQL",
+        "cloud data warehouses",
+        "RDBMS",
+        "data wrangling"
+      ],
+      "work_type": "Remote"
+    },
+    "response": "**Extracted Information**\n\n| Field | Value |\n|-------|-------|\n| **Primary Job Title** | Senior AI/ML Data Scientist |\n| **Minimum Required Years of Experience** | 5 |\n| **Technical / Professional Skills** | Deep Learning, PyTorch, NLP, Generative AI, Python, SQL, cloud data warehouses, RDBMS, data wrangling |\n| **Work Arrangement** | Remote |\n\n**JSON Representation**\n\n```json\n{\n  \"title\": \"Senior AI/ML Data Scientist\",\n  \"min_experience_years\": 5,\n  \"skills\": [\n    \"Deep Learning\",\n    \"PyTorch\",\n    \"NLP\",\n    \"Generative AI\",\n    \"Python\",\n    \"SQL\",\n    \"cloud data warehouses\",\n    \"RDBMS\",\n    \"data wrangling\"\n  ],\n  \"work_arrangement\": \"Remote\"\n}\n```\n",
+    "evaluation": {
+      "json_valid": false,
+      "field_accuracy": 0.0,
+      "skill_precision": 0.0,
+      "skill_recall": 0.0,
+      "skill_f1": 0.0,
+      "completeness": 0.0,
+      "overall_score": 0.0
+    }
+  },
+  {
+    "test_id": 17,
+    "prompt": "reasoning",
+    "input": "Data Scientist needed to develop models for energy-market analytics and clean-tech applications. Must know Classical Machine Learning, Deep Learning, Python, NumPy, Pandas, SciPy, time series modeling, and advanced statistics. Full-time position.",
+    "expected": {
+      "job_title": "Data Scientist",
+      "experience_years": null,
+      "skills": [
+        "Classical Machine Learning",
+        "Deep Learning",
+        "Python",
+        "NumPy",
+        "Pandas",
+        "SciPy",
+        "time series modeling",
+        "advanced statistics"
+      ],
+      "work_type": "Full-time"
+    },
+    "response": "**Extracted Information**\n\n| Field                     | Value                                                                 |\n|---------------------------|-----------------------------------------------------------------------|\n| **Primary Job Title**     | Data Scientist                                                        |\n| **Minimum Years of Experience** | null (no requirement stated)                                      |\n| **Technical / Professional Skills** | Classical Machine Learning, Deep Learning, Python, NumPy, Pandas, SciPy, time series modeling, advanced statistics |\n| **Work Arrangement**      | Full-time                                                             |\n\n**JSON Representation**\n\n```json\n{\n  \"job_title\": \"Data Scientist\",\n  \"minimum_years_experience\": null,\n  \"skills\": [\n    \"Classical Machine Learning\",\n    \"Deep Learning\",\n    \"Python\",\n    \"NumPy\",\n    \"Pandas\",\n    \"SciPy\",\n    \"time series modeling\",\n    \"advanced statistics\"\n  ],\n  \"work_arrangement\": \"Full-time\"\n}\n```\n",
+    "evaluation": {
+      "json_valid": false,
+      "field_accuracy": 0.0,
+      "skill_precision": 0.0,
+      "skill_recall": 0.0,
+      "skill_f1": 0.0,
+      "completeness": 0.0,
+      "overall_score": 0.0
+    }
+  },
+  {
+    "test_id": 18,
+    "prompt": "reasoning",
+    "input": "Forecast Analyst needed to manage forecasting and projection models for a retail call center. Must know forecasting, predictive modeling, Machine Learning, advanced statistics, SQL, Python, R, business analysis, Excel, PowerPoint, and workforce management. 3+ years of experience required.",
+    "expected": {
+      "job_title": "Forecast Analyst",
+      "experience_years": 3,
+      "skills": [
+        "forecasting",
+        "predictive modeling",
+        "Machine Learning",
+        "advanced statistics",
+        "SQL",
+        "Python",
+        "R",
+        "business analysis",
+        "Excel",
+        "PowerPoint",
+        "workforce management"
+      ],
+      "work_type": null
+    },
+    "response": "**Extracted Information**\n\n| Field | Value |\n|-------|-------|\n| **Primary Job Title** | Forecast Analyst |\n| **Minimum Required Years of Experience** | 3 |\n| **Explicitly Mentioned Skills** | forecasting, predictive modeling, Machine Learning, advanced statistics, SQL, Python, R, business analysis, Excel, PowerPoint, workforce management |\n| **Work Arrangement** | null |\n\n**JSON Representation**\n\n```json\n{\n  \"job_title\": \"Forecast Analyst\",\n  \"minimum_experience_years\": 3,\n  \"skills\": [\n    \"forecasting\",\n    \"predictive modeling\",\n    \"Machine Learning\",\n    \"advanced statistics\",\n    \"SQL\",\n    \"Python\",\n    \"R\",\n    \"business analysis\",\n    \"Excel\",\n    \"PowerPoint\",\n    \"workforce management\"\n  ],\n  \"work_arrangement\": null\n}\n```\n",
+    "evaluation": {
+      "json_valid": false,
+      "field_accuracy": 0.0,
+      "skill_precision": 0.0,
+      "skill_recall": 0.0,
+      "skill_f1": 0.0,
+      "completeness": 0.0,
+      "overall_score": 0.0
+    }
+  },
+  {
+    "test_id": 19,
+    "prompt": "reasoning",
+    "input": "Lead Data Scientist needed to develop analytics solutions for retail pharmacy payer analytics, pricing, reimbursement, and margin optimization. Must know SQL, Python, Machine Learning, optimization, mathematics, statistics, A/B testing, data visualization, and Tableau. Full-time remote position.",
+    "expected": {
+      "job_title": "Lead Data Scientist",
+      "experience_years": null,
+      "skills": [
+        "SQL",
+        "Python",
+        "Machine Learning",
+        "optimization",
+        "mathematics",
+        "statistics",
+        "A/B testing",
+        "data visualization",
+        "Tableau"
+      ],
+      "work_type": "Remote"
+    },
+    "response": "**Extracted Information**\n\n| Field | Value |\n|-------|-------|\n| **Job Title** | Lead Data Scientist |\n| **Minimum Experience (years)** | null |\n| **Skills** | SQL, Python, Machine Learning, optimization, mathematics, statistics, A/B testing, data visualization, Tableau |\n| **Work Arrangement** | Remote, Full‑time |",
+    "evaluation": {
+      "json_valid": false,
+      "field_accuracy": 0.0,
+      "skill_precision": 0.0,
+      "skill_recall": 0.0,
+      "skill_f1": 0.0,
+      "completeness": 0.0,
+      "overall_score": 0.0
+    }
+  },
+  {
+    "test_id": 20,
+    "prompt": "reasoning",
+    "input": "Research Scientist needed to conduct independent research on complex machine learning problems and responsible AI. Must have strong knowledge of Machine Learning fundamentals and experience contributing to ML research. 4+ years of experience required. Full-time position.",
+    "expected": {
+      "job_title": "Research Scientist",
+      "experience_years": 4,
+      "skills": [
+        "Machine Learning fundamentals",
+        "ML research"
+      ],
+      "work_type": "Full-time"
+    },
+    "response": "**Extracted Information**\n\n| Field | Value |\n|-------|-------|\n| **Primary Job Title** | Research Scientist |\n| **Minimum Required Years of Experience** | 4 |\n| **Technical / Professional Skills** | • Machine Learning fundamentals<br>• Responsible AI<br>• ML research |\n| **Work Arrangement** | Full-time |",
+    "evaluation": {
+      "json_valid": false,
+      "field_accuracy": 0.0,
+      "skill_precision": 0.0,
+      "skill_recall": 0.0,
+      "skill_f1": 0.0,
+      "completeness": 0.0,
+      "overall_score": 0.0
+    }
+  },
+  {
+    "test_id": 1,
+    "prompt": "structured",
+    "input": "Data Science Director needed to lead product strategy and analytics vision. Must know Generative ML, Discriminative ML, Contrastive ML, Classification, Gradient Boosting, Causal Inference, AI, and advanced statistics. 8+ years of experience required. Full-time position.",
+    "expected": {
+      "job_title": "Data Science Director",
+      "experience_years": 8,
+      "skills": [
+        "Generative ML",
+        "Discriminative ML",
+        "Contrastive ML",
+        "Classification",
+        "Gradient Boosting",
+        "Causal Inference",
+        "AI",
+        "advanced statistics"
+      ],
+      "work_type": "Full-time"
+    },
+    "response": "{\"job_title\":\"Data Science Director\",\"experience_years\":8,\"skills\":[\"Generative ML\",\"Discriminative ML\",\"Contrastive ML\",\"Classification\",\"Gradient Boosting\",\"Causal Inference\",\"AI\",\"advanced statistics\"],\"work_type\":\"Full-time\"}",
+    "evaluation": {
+      "json_valid": true,
+      "field_accuracy": 1.0,
+      "skill_precision": 1.0,
+      "skill_recall": 1.0,
+      "skill_f1": 1.0,
+      "completeness": 1.0,
+      "overall_score": 1.0
+    }
+  },
+  {
+    "test_id": 2,
+    "prompt": "structured",
+    "input": "Senior Data Scientist needed to build large-scale semantic analysis and question-answering systems for medical data. Must know NLP, Machine Learning, Deep Learning, LLMs, Transformers, Information Extraction, NER, Entity Linking, and Q&A. 5+ years of experience required.",
+    "expected": {
+      "job_title": "Senior Data Scientist",
+      "experience_years": 5,
+      "skills": [
+        "NLP",
+        "Machine Learning",
+        "Deep Learning",
+        "LLMs",
+        "Transformers",
+        "Information Extraction",
+        "NER",
+        "Entity Linking",
+        "Q&A"
+      ],
+      "work_type": null
+    },
+    "response": "{\"job_title\":\"Senior Data Scientist\",\"experience_years\":5,\"skills\":[\"NLP\",\"Machine Learning\",\"Deep Learning\",\"LLMs\",\"Transformers\",\"Information Extraction\",\"NER\",\"Entity Linking\",\"Q&A\"],\"work_type\":null}",
+    "evaluation": {
+      "json_valid": true,
+      "field_accuracy": 1.0,
+      "skill_precision": 1.0,
+      "skill_recall": 1.0,
+      "skill_f1": 1.0,
+      "completeness": 1.0,
+      "overall_score": 1.0
+    }
+  },
+  {
+    "test_id": 3,
+    "prompt": "structured",
+    "input": "Staff Data Scientist needed to drive business growth through data analysis, forecasting, and predictive modeling. Must know SQL, Python or R, statistical methods, and machine learning. Full-time position.",
+    "expected": {
+      "job_title": "Staff Data Scientist",
+      "experience_years": null,
+      "skills": [
+        "SQL",
+        "Python",
+        "R",
+        "statistical methods",
+        "machine learning"
+      ],
+      "work_type": "Full-time"
+    },
+    "response": "{\"job_title\":\"Staff Data Scientist\",\"experience_years\":null,\"skills\":[\"SQL\",\"Python\",\"R\",\"statistical methods\",\"machine learning\"],\"work_type\":\"Full-time\"}",
+    "evaluation": {
+      "json_valid": true,
+      "field_accuracy": 1.0,
+      "skill_precision": 1.0,
+      "skill_recall": 1.0,
+      "skill_f1": 1.0,
+      "completeness": 1.0,
+      "overall_score": 1.0
+    }
+  },
+  {
+    "test_id": 4,
+    "prompt": "structured",
+    "input": "Senior Staff Data Scientist needed to solve complex product and engineering problems using quantitative modeling and experimentation. Must know Machine Learning, Deep Learning, Statistical Modeling, Forecasting, Econometrics, PyTorch, TensorFlow, scikit-learn, SQL, Python, and R. 7+ years of experience required.",
+    "expected": {
+      "job_title": "Senior Staff Data Scientist",
+      "experience_years": 7,
+      "skills": [
+        "Machine Learning",
+        "Deep Learning",
+        "Statistical Modeling",
+        "Forecasting",
+        "Econometrics",
+        "PyTorch",
+        "TensorFlow",
+        "scikit-learn",
+        "SQL",
+        "Python",
+        "R"
+      ],
+      "work_type": null
+    },
+    "response": "{\"job_title\":\"Senior Staff Data Scientist\",\"experience_years\":7,\"skills\":[\"Machine Learning\",\"Deep Learning\",\"Statistical Modeling\",\"Forecasting\",\"Econometrics\",\"PyTorch\",\"TensorFlow\",\"scikit-learn\",\"SQL\",\"Python\",\"R\"],\"work_type\":null}",
+    "evaluation": {
+      "json_valid": true,
+      "field_accuracy": 1.0,
+      "skill_precision": 1.0,
+      "skill_recall": 1.0,
+      "skill_f1": 1.0,
+      "completeness": 1.0,
+      "overall_score": 1.0
+    }
+  },
+  {
+    "test_id": 5,
+    "prompt": "structured",
+    "input": "Staff Data Scientist needed for a Growth team to analyze web-scale data and solve product and business problems. Must know Python, R, SQL, Hive, experimentation design, experimentation analysis, metrics definition, and data pipeline prototyping. Full-time remote position.",
+    "expected": {
+      "job_title": "Staff Data Scientist",
+      "experience_years": null,
+      "skills": [
+        "Python",
+        "R",
+        "SQL",
+        "Hive",
+        "experimentation design",
+        "experimentation analysis",
+        "metrics definition",
+        "data pipeline prototyping"
+      ],
+      "work_type": "Remote"
+    },
+    "response": "{\"job_title\":\"Staff Data Scientist\",\"experience_years\":null,\"skills\":[\"Python\",\"R\",\"SQL\",\"Hive\",\"experimentation design\",\"experimentation analysis\",\"metrics definition\",\"data pipeline prototyping\"],\"work_type\":\"Full-time remote position\"}",
+    "evaluation": {
+      "json_valid": true,
+      "field_accuracy": 0.75,
+      "skill_precision": 1.0,
+      "skill_recall": 1.0,
+      "skill_f1": 1.0,
+      "completeness": 0.9090909090909091,
+      "overall_score": 0.875
+    }
+  },
+  {
+    "test_id": 6,
+    "prompt": "structured",
+    "input": "Staff Data Scientist needed for a Browse Discovery team to improve user-facing and business-facing products. Must know data analysis, quantitative modeling, Machine Learning, statistical modeling, forecasting, econometrics, PyTorch, TensorFlow, scikit-learn, SQL, Python, and R. 6+ years of experience required.",
+    "expected": {
+      "job_title": "Staff Data Scientist",
+      "experience_years": 6,
+      "skills": [
+        "data analysis",
+        "quantitative modeling",
+        "Machine Learning",
+        "statistical modeling",
+        "forecasting",
+        "econometrics",
+        "PyTorch",
+        "TensorFlow",
+        "scikit-learn",
+        "SQL",
+        "Python",
+        "R"
+      ],
+      "work_type": null
+    },
+    "response": "{\"job_title\":\"Staff Data Scientist\",\"experience_years\":6,\"skills\":[\"data analysis\",\"quantitative modeling\",\"Machine Learning\",\"statistical modeling\",\"forecasting\",\"econometrics\",\"PyTorch\",\"TensorFlow\",\"scikit-learn\",\"SQL\",\"Python\",\"R\"],\"work_type\":null}",
+    "evaluation": {
+      "json_valid": true,
+      "field_accuracy": 1.0,
+      "skill_precision": 1.0,
+      "skill_recall": 1.0,
+      "skill_f1": 1.0,
+      "completeness": 1.0,
+      "overall_score": 1.0
+    }
+  },
+  {
+    "test_id": 7,
+    "prompt": "structured",
+    "input": "Senior Data Scientist needed for a Search team to develop product solutions using quantitative modeling and algorithms. Must know Machine Learning, statistical modeling, forecasting, econometrics, PyTorch, TensorFlow, scikit-learn, SQL, Python, R, and experimentation. Full-time position.",
+    "expected": {
+      "job_title": "Senior Data Scientist",
+      "experience_years": null,
+      "skills": [
+        "Machine Learning",
+        "statistical modeling",
+        "forecasting",
+        "econometrics",
+        "PyTorch",
+        "TensorFlow",
+        "scikit-learn",
+        "SQL",
+        "Python",
+        "R",
+        "experimentation"
+      ],
+      "work_type": "Full-time"
+    },
+    "response": "{\"job_title\":\"Senior Data Scientist\",\"experience_years\":null,\"skills\":[\"Machine Learning\",\"statistical modeling\",\"forecasting\",\"econometrics\",\"PyTorch\",\"TensorFlow\",\"scikit-learn\",\"SQL\",\"Python\",\"R\",\"experimentation\",\"quantitative modeling\",\"algorithms\"],\"work_type\":\"Full-time\"}",
+    "evaluation": {
+      "json_valid": true,
+      "field_accuracy": 0.9791666666666666,
+      "skill_precision": 0.8461538461538461,
+      "skill_recall": 1.0,
+      "skill_f1": 0.9166666666666666,
+      "completeness": 1.0,
+      "overall_score": 0.9645833333333333
+    }
+  },
+  {
+    "test_id": 8,
+    "prompt": "structured",
+    "input": "Senior Data Scientist needed for a Growth team to apply scientific methods and machine learning to product development. Must know data analysis, Machine Learning, statistical modeling, forecasting, econometrics, PyTorch, TensorFlow, scikit-learn, SQL, Python, and R. 4+ years of experience required.",
+    "expected": {
+      "job_title": "Senior Data Scientist",
+      "experience_years": 4,
+      "skills": [
+        "data analysis",
+        "Machine Learning",
+        "statistical modeling",
+        "forecasting",
+        "econometrics",
+        "PyTorch",
+        "TensorFlow",
+        "scikit-learn",
+        "SQL",
+        "Python",
+        "R"
+      ],
+      "work_type": null
+    },
+    "response": "{\"job_title\":\"Senior Data Scientist\",\"experience_years\":4,\"skills\":[\"data analysis\",\"Machine Learning\",\"statistical modeling\",\"forecasting\",\"econometrics\",\"PyTorch\",\"TensorFlow\",\"scikit-learn\",\"SQL\",\"Python\",\"R\"],\"work_type\":null}",
+    "evaluation": {
+      "json_valid": true,
+      "field_accuracy": 1.0,
+      "skill_precision": 1.0,
+      "skill_recall": 1.0,
+      "skill_f1": 1.0,
+      "completeness": 1.0,
+      "overall_score": 1.0
+    }
+  },
+  {
+    "test_id": 9,
+    "prompt": "structured",
+    "input": "Senior Data Scientist needed to develop and deploy machine learning features across multiple products. Must have strong knowledge of computer vision, NLP, Deep Learning, ML algorithms, Python, and Large Language Models. Mentoring experience required. Full-time remote position.",
+    "expected": {
+      "job_title": "Senior Data Scientist",
+      "experience_years": null,
+      "skills": [
+        "computer vision",
+        "NLP",
+        "Deep Learning",
+        "ML algorithms",
+        "Python",
+        "Large Language Models"
+      ],
+      "work_type": "Remote"
+    },
+    "response": "{\"job_title\":\"Senior Data Scientist\",\"experience_years\":null,\"skills\":[\"computer vision\",\"NLP\",\"Deep Learning\",\"ML algorithms\",\"Python\",\"Large Language Models\"],\"work_type\":\"Full-time remote position\"}",
+    "evaluation": {
+      "json_valid": true,
+      "field_accuracy": 0.75,
+      "skill_precision": 1.0,
+      "skill_recall": 1.0,
+      "skill_f1": 1.0,
+      "completeness": 0.8888888888888888,
+      "overall_score": 0.875
+    }
+  },
+  {
+    "test_id": 10,
+    "prompt": "structured",
+    "input": "Lead Data Scientist needed to build and deploy machine learning solutions at scale. Must know data analysis, data mining, optimization, clustering, regression, classification, statistical inference, predictive modeling, algorithms, data structures, and software development. 6+ years of experience required.",
+    "expected": {
+      "job_title": "Lead Data Scientist",
+      "experience_years": 6,
+      "skills": [
+        "data analysis",
+        "data mining",
+        "optimization",
+        "clustering",
+        "regression",
+        "classification",
+        "statistical inference",
+        "predictive modeling",
+        "algorithms",
+        "data structures",
+        "software development"
+      ],
+      "work_type": null
+    },
+    "response": "{\"job_title\":\"Lead Data Scientist\",\"experience_years\":6,\"skills\":[\"data analysis\",\"data mining\",\"optimization\",\"clustering\",\"regression\",\"classification\",\"statistical inference\",\"predictive modeling\",\"algorithms\",\"data structures\",\"software development\"],\"work_type\":null}",
+    "evaluation": {
+      "json_valid": true,
+      "field_accuracy": 1.0,
+      "skill_precision": 1.0,
+      "skill_recall": 1.0,
+      "skill_f1": 1.0,
+      "completeness": 1.0,
+      "overall_score": 1.0
+    }
+  },
+  {
+    "test_id": 11,
+    "prompt": "structured",
+    "input": "Data Scientist needed to extract insights from high-volume, high-dimensional datasets. Must know advanced statistical analysis, algorithms, predictive modeling, experimentation, pattern recognition, AI, Deep Learning, data structures, distributed systems, and software development. Full-time position.",
+    "expected": {
+      "job_title": "Data Scientist",
+      "experience_years": null,
+      "skills": [
+        "advanced statistical analysis",
+        "algorithms",
+        "predictive modeling",
+        "experimentation",
+        "pattern recognition",
+        "AI",
+        "Deep Learning",
+        "data structures",
+        "distributed systems",
+        "software development"
+      ],
+      "work_type": "Full-time"
+    },
+    "response": "{\"job_title\":\"Data Scientist\",\"experience_years\":null,\"skills\":[\"advanced statistical analysis\",\"algorithms\",\"predictive modeling\",\"experimentation\",\"pattern recognition\",\"AI\",\"Deep Learning\",\"data structures\",\"distributed systems\",\"software development\"],\"work_type\":\"Full-time\"}",
+    "evaluation": {
+      "json_valid": true,
+      "field_accuracy": 1.0,
+      "skill_precision": 1.0,
+      "skill_recall": 1.0,
+      "skill_f1": 1.0,
+      "completeness": 1.0,
+      "overall_score": 1.0
+    }
+  },
+  {
+    "test_id": 12,
+    "prompt": "structured",
+    "input": "Cybersecurity Data Scientist Manager needed to lead data science and engineering teams developing security analytics solutions. Must know Python, Databricks, Spark, microservices, cybersecurity datasets, machine learning, data parsing and cleansing, GitHub, Jira, and Agile Scrum. 8+ years of experience required. On-site position.",
+    "expected": {
+      "job_title": "Cybersecurity Data Scientist Manager",
+      "experience_years": 8,
+      "skills": [
+        "Python",
+        "Databricks",
+        "Spark",
+        "microservices",
+        "cybersecurity datasets",
+        "machine learning",
+        "data parsing and cleansing",
+        "GitHub",
+        "Jira",
+        "Agile Scrum"
+      ],
+      "work_type": "On-site"
+    },
+    "response": "{\"job_title\":\"Cybersecurity Data Scientist Manager\",\"experience_years\":8,\"skills\":[\"Python\",\"Databricks\",\"Spark\",\"microservices\",\"cybersecurity datasets\",\"machine learning\",\"data parsing and cleansing\",\"GitHub\",\"Jira\",\"Agile Scrum\"],\"work_type\":\"On-site\"}",
+    "evaluation": {
+      "json_valid": true,
+      "field_accuracy": 1.0,
+      "skill_precision": 1.0,
+      "skill_recall": 1.0,
+      "skill_f1": 1.0,
+      "completeness": 1.0,
+      "overall_score": 1.0
+    }
+  },
+  {
+    "test_id": 13,
+    "prompt": "structured",
+    "input": "Senior Data Scientist needed to build credit and fraud machine learning models from feature engineering through production and monitoring. Must know Machine Learning, PySpark, and A/B testing. Full-time remote position.",
+    "expected": {
+      "job_title": "Senior Data Scientist",
+      "experience_years": null,
+      "skills": [
+        "Machine Learning",
+        "PySpark",
+        "A/B testing"
+      ],
+      "work_type": "Remote"
+    },
+    "response": "{\"job_title\":\"Senior Data Scientist\",\"experience_years\":null,\"skills\":[\"Machine Learning\",\"PySpark\",\"A/B testing\"],\"work_type\":\"Full-time remote position\"}",
+    "evaluation": {
+      "json_valid": true,
+      "field_accuracy": 0.75,
+      "skill_precision": 1.0,
+      "skill_recall": 1.0,
+      "skill_f1": 1.0,
+      "completeness": 0.8333333333333334,
+      "overall_score": 0.875
+    }
+  },
+  {
+    "test_id": 14,
+    "prompt": "structured",
+    "input": "Senior NLP Data Scientist needed to develop AI-powered legal and contract management products. Must know Machine Learning, Deep Learning, NLP, RNNs, CNNs, Transformers, NER, Q&A, Python, TensorFlow, PyTorch, Spark, Databricks, and AWS SageMaker. 5+ years of experience required.",
+    "expected": {
+      "job_title": "Senior NLP Data Scientist",
+      "experience_years": 5,
+      "skills": [
+        "Machine Learning",
+        "Deep Learning",
+        "NLP",
+        "RNNs",
+        "CNNs",
+        "Transformers",
+        "NER",
+        "Q&A",
+        "Python",
+        "TensorFlow",
+        "PyTorch",
+        "Spark",
+        "Databricks",
+        "AWS SageMaker"
+      ],
+      "work_type": null
+    },
+    "response": "{\"job_title\":\"Senior NLP Data Scientist\",\"experience_years\":5,\"skills\":[\"Machine Learning\",\"Deep Learning\",\"NLP\",\"RNNs\",\"CNNs\",\"Transformers\",\"NER\",\"Q&A\",\"Python\",\"TensorFlow\",\"PyTorch\",\"Spark\",\"Databricks\",\"AWS SageMaker\"],\"work_type\":null}",
+    "evaluation": {
+      "json_valid": true,
+      "field_accuracy": 1.0,
+      "skill_precision": 1.0,
+      "skill_recall": 1.0,
+      "skill_f1": 1.0,
+      "completeness": 1.0,
+      "overall_score": 1.0
+    }
+  },
+  {
+    "test_id": 15,
+    "prompt": "structured",
+    "input": "Principal Data Scientist needed to lead the development of advanced AI/ML products and machine learning platforms. Must know Machine Learning, NLP, personalization and ranking, Deep Learning, Generative AI, LLMs, MLOps, Python, SQL, Databricks, Snowflake, and Kubernetes. Full-time position.",
+    "expected": {
+      "job_title": "Principal Data Scientist",
+      "experience_years": null,
+      "skills": [
+        "Machine Learning",
+        "NLP",
+        "personalization and ranking",
+        "Deep Learning",
+        "Generative AI",
+        "LLMs",
+        "MLOps",
+        "Python",
+        "SQL",
+        "Databricks",
+        "Snowflake",
+        "Kubernetes"
+      ],
+      "work_type": "Full-time"
+    },
+    "response": "{\"job_title\":\"Principal Data Scientist\",\"experience_years\":null,\"skills\":[\"Machine Learning\",\"NLP\",\"personalization and ranking\",\"Deep Learning\",\"Generative AI\",\"LLMs\",\"MLOps\",\"Python\",\"SQL\",\"Databricks\",\"Snowflake\",\"Kubernetes\"],\"work_type\":\"Full-time\"}",
+    "evaluation": {
+      "json_valid": true,
+      "field_accuracy": 1.0,
+      "skill_precision": 1.0,
+      "skill_recall": 1.0,
+      "skill_f1": 1.0,
+      "completeness": 1.0,
+      "overall_score": 1.0
+    }
+  },
+  {
+    "test_id": 16,
+    "prompt": "structured",
+    "input": "Senior AI/ML Data Scientist needed to design, build, and deploy data-driven AI/ML solutions. Must know Deep Learning, PyTorch, NLP, Generative AI, Python, SQL, cloud data warehouses, RDBMS, and data wrangling. 5+ years of experience required. Remote position.",
+    "expected": {
+      "job_title": "Senior AI/ML Data Scientist",
+      "experience_years": 5,
+      "skills": [
+        "Deep Learning",
+        "PyTorch",
+        "NLP",
+        "Generative AI",
+        "Python",
+        "SQL",
+        "cloud data warehouses",
+        "RDBMS",
+        "data wrangling"
+      ],
+      "work_type": "Remote"
+    },
+    "response": "{\"job_title\":\"Senior AI/ML Data Scientist\",\"experience_years\":5,\"skills\":[\"Deep Learning\",\"PyTorch\",\"NLP\",\"Generative AI\",\"Python\",\"SQL\",\"cloud data warehouses\",\"RDBMS\",\"data wrangling\"],\"work_type\":\"Remote\"}",
+    "evaluation": {
+      "json_valid": true,
+      "field_accuracy": 1.0,
+      "skill_precision": 1.0,
+      "skill_recall": 1.0,
+      "skill_f1": 1.0,
+      "completeness": 1.0,
+      "overall_score": 1.0
+    }
+  },
+  {
+    "test_id": 17,
+    "prompt": "structured",
+    "input": "Data Scientist needed to develop models for energy-market analytics and clean-tech applications. Must know Classical Machine Learning, Deep Learning, Python, NumPy, Pandas, SciPy, time series modeling, and advanced statistics. Full-time position.",
+    "expected": {
+      "job_title": "Data Scientist",
+      "experience_years": null,
+      "skills": [
+        "Classical Machine Learning",
+        "Deep Learning",
+        "Python",
+        "NumPy",
+        "Pandas",
+        "SciPy",
+        "time series modeling",
+        "advanced statistics"
+      ],
+      "work_type": "Full-time"
+    },
+    "response": "{\"job_title\":\"Data Scientist\",\"experience_years\":null,\"skills\":[\"Classical Machine Learning\",\"Deep Learning\",\"Python\",\"NumPy\",\"Pandas\",\"SciPy\",\"time series modeling\",\"advanced statistics\"],\"work_type\":\"Full-time\"}",
+    "evaluation": {
+      "json_valid": true,
+      "field_accuracy": 1.0,
+      "skill_precision": 1.0,
+      "skill_recall": 1.0,
+      "skill_f1": 1.0,
+      "completeness": 1.0,
+      "overall_score": 1.0
+    }
+  },
+  {
+    "test_id": 18,
+    "prompt": "structured",
+    "input": "Forecast Analyst needed to manage forecasting and projection models for a retail call center. Must know forecasting, predictive modeling, Machine Learning, advanced statistics, SQL, Python, R, business analysis, Excel, PowerPoint, and workforce management. 3+ years of experience required.",
+    "expected": {
+      "job_title": "Forecast Analyst",
+      "experience_years": 3,
+      "skills": [
+        "forecasting",
+        "predictive modeling",
+        "Machine Learning",
+        "advanced statistics",
+        "SQL",
+        "Python",
+        "R",
+        "business analysis",
+        "Excel",
+        "PowerPoint",
+        "workforce management"
+      ],
+      "work_type": null
+    },
+    "response": "{\"job_title\":\"Forecast Analyst\",\"experience_years\":3,\"skills\":[\"forecasting\",\"predictive modeling\",\"Machine Learning\",\"advanced statistics\",\"SQL\",\"Python\",\"R\",\"business analysis\",\"Excel\",\"PowerPoint\",\"workforce management\"],\"work_type\":null}",
+    "evaluation": {
+      "json_valid": true,
+      "field_accuracy": 1.0,
+      "skill_precision": 1.0,
+      "skill_recall": 1.0,
+      "skill_f1": 1.0,
+      "completeness": 1.0,
+      "overall_score": 1.0
+    }
+  },
+  {
+    "test_id": 19,
+    "prompt": "structured",
+    "input": "Lead Data Scientist needed to develop analytics solutions for retail pharmacy payer analytics, pricing, reimbursement, and margin optimization. Must know SQL, Python, Machine Learning, optimization, mathematics, statistics, A/B testing, data visualization, and Tableau. Full-time remote position.",
+    "expected": {
+      "job_title": "Lead Data Scientist",
+      "experience_years": null,
+      "skills": [
+        "SQL",
+        "Python",
+        "Machine Learning",
+        "optimization",
+        "mathematics",
+        "statistics",
+        "A/B testing",
+        "data visualization",
+        "Tableau"
+      ],
+      "work_type": "Remote"
+    },
+    "response": "{\"job_title\":\"Lead Data Scientist\",\"experience_years\":null,\"skills\":[\"SQL\",\"Python\",\"Machine Learning\",\"optimization\",\"mathematics\",\"statistics\",\"A/B testing\",\"data visualization\",\"Tableau\"],\"work_type\":\"Full-time remote\"}",
+    "evaluation": {
+      "json_valid": true,
+      "field_accuracy": 0.75,
+      "skill_precision": 1.0,
+      "skill_recall": 1.0,
+      "skill_f1": 1.0,
+      "completeness": 0.9166666666666666,
+      "overall_score": 0.875
+    }
+  },
+  {
+    "test_id": 20,
+    "prompt": "structured",
+    "input": "Research Scientist needed to conduct independent research on complex machine learning problems and responsible AI. Must have strong knowledge of Machine Learning fundamentals and experience contributing to ML research. 4+ years of experience required. Full-time position.",
+    "expected": {
+      "job_title": "Research Scientist",
+      "experience_years": 4,
+      "skills": [
+        "Machine Learning fundamentals",
+        "ML research"
+      ],
+      "work_type": "Full-time"
+    },
+    "response": "{\"job_title\":\"Research Scientist\",\"experience_years\":4,\"skills\":[\"Machine Learning fundamentals\",\"ML research\",\"responsible AI\"],\"work_type\":\"Full-time\"}",
+    "evaluation": {
+      "json_valid": true,
+      "field_accuracy": 0.95,
+      "skill_precision": 0.6666666666666666,
+      "skill_recall": 1.0,
+      "skill_f1": 0.8,
+      "completeness": 1.0,
+      "overall_score": 0.915
+    }
+  }
+]

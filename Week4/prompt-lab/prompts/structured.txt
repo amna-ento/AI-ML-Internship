@@ -1,0 +1,26 @@
+Extract structured information from the following job description.
+
+Return ONLY valid JSON.
+
+The JSON must contain exactly these four fields:
+
+{
+  "job_title": "string",
+  "experience_years": "number or null",
+  "skills": ["string"],
+  "work_type": "string or null"
+}
+
+Rules:
+
+- job_title must contain the primary job title.
+- experience_years must contain the minimum explicitly stated experience in years, or null if not stated.
+- skills must contain explicitly mentioned skills only.
+- Do not invent skills.
+- work_type must contain the explicitly stated work arrangement, or null if not stated.
+- Do not include explanations.
+- Do not use Markdown code fences.
+- Return only the JSON object.
+
+Job description:
+{{input}}

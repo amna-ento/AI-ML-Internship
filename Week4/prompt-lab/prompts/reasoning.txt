@@ -1,0 +1,12 @@
+Extract structured information from the following job description.
+
+Follow this extraction procedure:
+
+1. Identify the primary job title.
+2. Identify the minimum required years of experience. If no experience requirement is stated, use null.
+3. Extract all explicitly mentioned technical or professional skills. Do not invent skills that are not stated.
+4. Identify the work arrangement. Use Remote, On-site, Full-time, or null when applicable.
+5. Produce the final extracted information.
+
+Job description:
+{{input}}
