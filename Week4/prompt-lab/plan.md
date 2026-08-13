@@ -494,15 +494,4 @@ Then we evaluate those 80 responses.
 This is why we need automation instead of manually testing everything.
 
 
-# Current status
-
-We are currently at:
-
-[DISCUSSION / PLANNING]
-
-We have NOT started implementation yet.
-
-The first actual decision we need to make is:
-
-> **Which task should we choose for the Prompt Lab?**
 
