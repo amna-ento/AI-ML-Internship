@@ -183,7 +183,7 @@ Calculates the average performance of each prompt strategy across all evaluation
 
 The results of all four prompting strategies are summarized below.
 
-| Metric            | Naive | Few-shot | Reasoning | Structured |
+| Metric            | Naive | Few shot | Reasoning | Structured |
 |-------------------|------:|---------:|----------:|----------:|
 | Valid JSON        | 0/20  | 2/20     | 0/20      | **20/20** |
 | Field Accuracy    | 0.000 | 0.075    | 0.000     | **0.946** |
@@ -215,6 +215,22 @@ The reasoning prompt produced descriptive answers such as tables and JSON code b
 ## Structured Prompt
 
 The structured-output prompt performed significantly better.
+
+
+## Why the Structured Prompt Won
+
+The Structured Output Prompt achieved the best performance across all evaluation metrics.
+
+- It produced **20/20 valid JSON outputs**, compared with 0/20 for the Naive Prompt, 2/20 for the Few-Shot Prompt, and 0/20 for the Reasoning Prompt.
+- It achieved the highest **Field Accuracy (0.946)**, showing that the extracted job information closely matched the ground truth.
+- It achieved **1.000 Skill Recall**, meaning it successfully extracted all expected skills on average.
+- It achieved **0.986 Skill F1**, showing a strong balance between correctly identifying skills and avoiding incorrect skills.
+- It achieved the highest **Completeness score (0.977)**.
+- Its **Overall Score of 0.969** was substantially higher than Few-shot (0.087), Naive (0.000), and Reasoning (0.000).
+
+The Structured Prompt performed best because this task requires the model to return multiple specific fields in a predictable, machine-readable format. By explicitly defining the required JSON schema and instructing the model to return only valid JSON with no additional text, the prompt reduced formatting errors and missing information.
+
+Therefore, the experimental results support using structured-output prompting for this type of information extraction task.
 
 
 # Conclusion

@@ -10,14 +10,16 @@ The important part is:
 
 > We need to experimentally compare four different prompts and use actual scores to decide which prompt works best.
 
-So this is basically a small **Prompt Engineering experiment**.
+
+So this is basically a small Prompt Engineering experiment.
+
 ---
 
 # 4. The four prompt versions
 
 We need exactly four versions.
 
-## Prompt 1 — Naive
+## Prompt 1: Naive
 
 This is the simplest possible prompt.
 
@@ -31,7 +33,7 @@ This tells us how well the model performs with a basic prompt.
 
 ---
 
-## Prompt 2 — Few-shot
+## Prompt 2: Few shot
 
 Here we give the model a few examples before giving it the real input.
 
@@ -48,7 +50,7 @@ Then the actual job description.
 
 ---
 
-## Prompt 3 — Chain-of-thought
+## Prompt 3: Chain of thought
 
 Here we ask the model to reason through the problem before producing the answer.
 
@@ -70,7 +72,7 @@ The important thing is to test whether adding a reasoning step improves extracti
 
 ---
 
-## Prompt 4 — Structured-output-enforced
+## Prompt 4: Structured output enforced
 
 Here we strongly enforce the output format.
 
@@ -85,9 +87,9 @@ Return ONLY valid JSON using this schema:
     "work_type": "string or null"
 }
 
-No explanation.
+No explanation and No extra text.
 
-No extra text.
+
 ---
 
 # 4. 20 inputs
@@ -340,7 +342,7 @@ Conceptually:
                                 |
           +-------------+---------------------------+
           |             |             |             |
-       Naive        Few-shot          CoT       Structured
+       Naive        Few shot          CoT       Structured
           |             |             |             |
           +-------------+-------------+-------------+
                                 |
