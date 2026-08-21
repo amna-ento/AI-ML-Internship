@@ -1,0 +1,17 @@
+Python Developer
+
+We are looking for a Python Developer with 2+ years of
+experience.
+
+Required Skills:
+- Python
+- FastAPI
+- PostgreSQL
+- REST APIs
+- Git
+
+Work Type:
+Remote
+
+Education:
+Bachelor's degree in Computer Science or related field.
