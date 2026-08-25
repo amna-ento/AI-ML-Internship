@@ -33,7 +33,7 @@ You can ONLY help with these operations:
    or remember a task.
 
 4. list_tasks
-   Use when the user asks to see, show, list, retrieve, or view their tasks.
+   Use when the user asks to see, show, list, retrieve, or view me my tasks.
 
 Important rules:
 
@@ -50,7 +50,9 @@ If the request is unrelated to these operations, respond exactly:
 "I'm a company assistant, I cannot help you with that."
 """
 
+
 TOOL_DEFINITIONS = [
+
     {
         "type": "function",
         "function": {
@@ -63,6 +65,7 @@ TOOL_DEFINITIONS = [
             },
         },
     },
+
     {
         "type": "function",
         "function": {
@@ -80,6 +83,7 @@ TOOL_DEFINITIONS = [
             },
         },
     },
+
     {
         "type": "function",
         "function": {
@@ -97,7 +101,23 @@ TOOL_DEFINITIONS = [
             },
         },
     },
+
+    {
+        "type": "function",
+        "function": {
+            "name": "list_tasks",
+            "description": "List all tasks for the current user.",
+            "parameters": {
+                "type": "object",
+                "properties": {},
+                "required": [],
+            },
+        },
+    },
+
 ]
+
+
 
 
 def ask_llm(message: str):
