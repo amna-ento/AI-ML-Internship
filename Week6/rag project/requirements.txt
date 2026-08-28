@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+chromadb
+sentence-transformers
+rank-bm25
+scikit-learn
+numpy
+pandas
+pypdf
+python-docx
+python-dotenv
+openai
+python-multipart
